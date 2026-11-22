@@ -1,94 +1,52 @@
+:root{--bg:#fbf1cf;--paper:#fffef4;--ink:#2b2231;--teal:#2c5d63;--sun:#e0752f;--mint:#d4ebe5;--line:#e4d6a8;--butter:#ffcf4d}
 *{box-sizing:border-box}
-:root{--bg:#f1f4ea;--ink:#17292e;--hl:#d6e35a;--co:#ef5b3f;--line:#b9c4b4;--soft:#e4ead8}
 html{scroll-behavior:smooth}
-body{margin:0;background:var(--bg);color:var(--ink);font-family:"Zen Kaku Gothic New",sans-serif;line-height:1.9;font-size:16px;overflow-x:hidden}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:"Zen Kaku Gothic New","Hiragino Sans","Meiryo",sans-serif;line-height:1.9;font-size:16px;overflow-x:hidden}
 img{max-width:100%;display:block}
-a{color:var(--ink);text-decoration-color:var(--co);text-underline-offset:3px}
-.top{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:8px 20px;padding:12px 16px;border-bottom:3px solid var(--ink);background:var(--bg);position:sticky;top:0;z-index:50}
-.logo{font-family:"RocknRoll One",sans-serif;text-decoration:none;font-size:1.15rem;letter-spacing:.04em}
-.logo b{background:var(--hl);padding:0 .2em;margin-left:.15em;font-weight:400}
-.top nav ul{display:flex;flex-wrap:wrap;gap:4px 14px;list-style:none;margin:0;padding:0 70px 0 0;font-size:.85rem}
-.top nav a{text-decoration:none;display:flex;gap:.35em;align-items:baseline;padding:2px 0}
-.top nav i{font-style:normal;font-family:"RocknRoll One",sans-serif;color:var(--co);font-size:.8em}
-.top nav a[aria-current]{background:linear-gradient(transparent 55%,var(--hl) 55%)}
-.hero{display:grid;grid-template-columns:minmax(120px,.7fr) 1.5fr;gap:24px;padding:36px 16px 48px;max-width:1100px;margin:0 auto;align-items:start}
-.vt{writing-mode:vertical-rl;font-family:"RocknRoll One",sans-serif;font-weight:400;font-size:clamp(2.6rem,10.5vw,6.2rem);line-height:1.15;margin:0;display:flex;gap:.12em;justify-self:end;letter-spacing:.06em}
-.vt span:last-child{background:var(--hl);padding:.1em 0;margin-top:1.4em}
-.herobody{padding-top:8px}
-.k{font-size:.78rem;letter-spacing:.18em;color:var(--co);margin:0 0 6px;font-weight:700}
-.lead{font-size:1.02rem;margin:14px 0}
-.btns{display:flex;flex-wrap:wrap;gap:10px;margin-top:14px}
-.btn{display:inline-block;background:var(--ink);color:#fff;text-decoration:none;padding:9px 20px;border:2px solid var(--ink);font-weight:700;font-size:.9rem}
-.btn.ghost{background:transparent;color:var(--ink)}
-.band{padding:48px 16px}
-.band.light{background:var(--soft)}
-.band .in,.pagehead .in{max-width:1000px;margin:0 auto}
-h2{font-family:"RocknRoll One",sans-serif;font-weight:400;font-size:clamp(1.3rem,4vw,1.9rem);line-height:1.5;margin:0 0 14px}
-.assoc{border-top:3px solid var(--ink);border-bottom:3px dashed var(--ink)}
-.assoc p:not(.k){max-width:44em}
-.toc{list-style:none;margin:20px 0 0;padding:0;border-top:2px solid var(--ink)}
-.toc li{display:grid;grid-template-columns:3.2rem 1fr;align-items:baseline;gap:8px;padding:10px 0;border-bottom:1px solid var(--line)}
-.toc .n{font-family:"RocknRoll One",sans-serif;font-size:1.6rem;line-height:1.2}
-.toc .on a{text-decoration:none;display:flex;flex-direction:column}
-.toc .on a b{font-size:1.1rem;background:linear-gradient(transparent 62%,var(--hl) 62%);width:fit-content}
-.toc .on a em{font-style:normal;font-size:.88rem;opacity:.8}
-.toc .skip{padding:2px 0;border-bottom:1px dashed var(--line);color:#7d8b80}
-.toc .skip .n{font-size:.95rem;text-decoration:line-through;text-decoration-color:var(--co)}
-.toc .skip .sk{font-size:.74rem;letter-spacing:.2em}
+a{color:var(--teal)}
+h1,h2,h3,.logo{font-family:"RocknRoll One","Hiragino Sans",sans-serif;font-weight:400}
+section{scroll-margin-top:70px}
+.top{position:sticky;top:0;z-index:50;display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:6px 20px;padding:10px 20px;background:var(--teal);color:#fff}
+.logo{color:#fff;text-decoration:none;font-size:20px;letter-spacing:.06em}
+.logo b{color:var(--butter);font-weight:400}
+.top nav ul{display:flex;flex-wrap:wrap;gap:2px 16px;list-style:none;margin:0;padding:0 70px 0 0}
+.top nav a{color:#fff;text-decoration:none;font-weight:700;font-size:14px;padding:4px 2px;border-bottom:2px solid transparent}
+.top nav a:hover{border-bottom-color:var(--butter)}
+.in{max-width:1000px;margin:0 auto;padding:0 20px}
+.hero{padding:48px 0 40px;background:var(--butter);border-bottom:6px dashed var(--teal)}
+.hero .in{display:grid;grid-template-columns:1.1fr 1fr;gap:28px;align-items:center}
+.k{margin:0 0 6px;font-size:13px;font-weight:700;color:var(--teal);letter-spacing:.14em}
+.hero h1{margin:0 0 14px;font-size:clamp(34px,7vw,60px);line-height:1.15;color:var(--teal)}
+.hero h1 span{display:inline-block;transform:rotate(-3deg)}
+.hero h1 span+span{transform:rotate(2deg);color:var(--sun)}
+.lead{font-size:18px;font-weight:700;margin:0 0 18px}
+.btn{display:inline-block;padding:10px 22px;border-radius:30px;background:var(--teal);color:#fff;text-decoration:none;font-weight:700}
+.btn.ghost{background:transparent;color:var(--teal);border:2px solid var(--teal)}
 .ph{margin:0}
-.ph img{width:100%;height:auto;border:3px solid var(--ink);background:#fff}
-.ph figcaption{font-size:.76rem;opacity:.8;margin-top:4px;line-height:1.5}
-.herophoto{margin:6px 0 4px;max-width:520px}
-.shelf{display:grid;grid-template-columns:repeat(6,1fr);gap:16px;margin-top:20px;align-items:start}
-.shelf .ph{grid-column:span 2}
-.shelf .ph:nth-child(even){margin-top:34px}
-.shelf .wide{grid-column:span 4}
-.shelf .sq img{aspect-ratio:1;object-fit:cover}
-.shelf.s4{grid-template-columns:repeat(4,1fr)}
-.shelf.s4 .ph{grid-column:span 2}
-.tall img{aspect-ratio:3/4;object-fit:cover}
-.pagehead{padding:40px 16px 20px;border-bottom:3px solid var(--ink)}
-.pagehead .in{display:flex;gap:20px;align-items:flex-end;flex-wrap:wrap}
-.pagehead .no{margin:0;font-family:"RocknRoll One",sans-serif;font-size:clamp(4.5rem,18vw,8rem);line-height:.9;display:flex;gap:.08em;align-items:flex-end}
-.pagehead .no s{font-size:.4em;color:#7d8b80;text-decoration-color:var(--co);text-decoration-thickness:3px}
-.pagehead .no span{background:var(--hl);padding:0 .06em}
-.pagehead h1{font-family:"RocknRoll One",sans-serif;font-weight:400;font-size:clamp(1.5rem,5vw,2.4rem);margin:0;line-height:1.4}
-.pagehead .lead{margin:6px 0 0;max-width:36em}
-.two{display:grid;grid-template-columns:1.1fr .9fr;gap:28px;align-items:start}
-.two.rev{grid-template-columns:1.3fr .7fr}
-.three{display:grid;grid-template-columns:repeat(2,1fr);gap:16px;margin-top:20px;align-items:start}
-.facts{padding-left:1.2em;margin:0}
-.facts li{margin-bottom:4px}
-.tt{width:100%;border-collapse:collapse;border-top:2px solid var(--ink)}
-.tt th,.tt td{text-align:left;padding:10px 8px;border-bottom:1px solid var(--line);vertical-align:top}
-.tt th{width:6.5em;white-space:nowrap;font-weight:700}
-.pending{display:inline-block;border:1px dashed var(--co);color:#b53a20;padding:0 .6em;font-size:.85rem}
-.imagine,.note{font-size:.84rem;background:#fff;border-left:5px solid var(--hl);padding:8px 12px;margin:14px 0}
-.vlist{display:flex;flex-direction:column;gap:20px}
-.vcard{margin:0;background:#fff;border:3px solid var(--ink);padding:18px 18px 12px;box-shadow:6px 6px 0 var(--hl)}
-.voice-sample-tag{display:inline-block;background:#c8432a;color:#fff;font-size:.72rem;font-weight:700;padding:1px 10px;letter-spacing:.1em}
-.vcard blockquote{margin:10px 0 6px;font-size:.98rem}
-.vcard figcaption{font-size:.8rem;opacity:.75}
-.map iframe{width:100%;height:340px;border:3px solid var(--ink);margin-top:22px}
-.foot{background:var(--ink);color:#e8efe3;padding:40px 16px 70px}
-.foot a{color:var(--hl)}
-.footin{max-width:1000px;margin:0 auto}
-.fn{font-family:"RocknRoll One",sans-serif;font-size:1.4rem;margin-bottom:8px}
-.fn b{background:var(--hl);color:var(--ink);padding:0 .2em;margin-left:.15em;font-weight:400}
-.credits{font-size:.74rem;opacity:.9;margin-top:22px;border-top:1px dashed #6d8085;padding-top:12px}
-.credits ul{padding-left:1.1em}
-.credits li{margin-bottom:3px;word-break:break-word}
-.design{font-size:.74rem;opacity:.8}
-.hp-photo-note{position:fixed;left:0;right:0;bottom:0;z-index:900;background:rgba(23,41,46,.92);color:#fff;font-size:.72rem;text-align:center;padding:5px 10px;line-height:1.5}
-@media(max-width:720px){
-.hero{grid-template-columns:auto 1fr;gap:14px;padding-top:24px}
-.vt{font-size:clamp(2.2rem,12vw,3.4rem)}
-.two,.two.rev{grid-template-columns:1fr}
-.shelf,.shelf.s4{grid-template-columns:repeat(2,1fr);gap:12px}
-.shelf .ph,.shelf.s4 .ph{grid-column:span 1}
-.shelf .wide{grid-column:span 2}
-.shelf .ph:nth-child(even){margin-top:0}
-.top{position:static}
-.top nav ul{padding-right:0}
-.map iframe{height:280px}
-}
+.ph img{width:100%;height:auto;aspect-ratio:4/3;object-fit:cover;border-radius:18px;border:4px solid #fff}
+.ph figcaption{font-size:12px;color:var(--teal);margin-top:4px}
+.sec{padding:56px 0}
+.sec.alt{background:var(--mint)}
+.sec h2{margin:0 0 18px;font-size:clamp(24px,4.5vw,34px);color:var(--teal)}
+.sec h2::after{content:"";display:block;width:64px;height:6px;margin-top:8px;border-radius:3px;background:var(--sun)}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin:22px 0}
+.grid .ph img{aspect-ratio:1/1}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:28px;align-items:center}
+.card{background:var(--paper);border:2px solid var(--line);border-radius:16px;padding:18px 20px}
+.menu{list-style:none;margin:0;padding:0;display:grid;gap:10px}
+.menu li{display:flex;justify-content:space-between;gap:12px;background:var(--paper);border-bottom:2px dotted var(--sun);padding:10px 14px;border-radius:10px}
+.menu b{color:var(--teal)}
+.menu em{font-style:normal;font-weight:700;color:var(--sun);white-space:nowrap}
+.voices{display:grid;gap:14px}
+.voice{background:var(--paper);border:2px solid var(--line);border-radius:16px;padding:16px 20px;position:relative}
+.badge{display:inline-block;background:var(--sun);color:#fff;font-size:12px;font-weight:700;padding:1px 10px;border-radius:12px;margin-bottom:6px}
+.voice p{margin:0}
+dl{margin:0;display:grid;grid-template-columns:7em 1fr;gap:8px 12px}
+dt{font-weight:700;color:var(--teal)}dd{margin:0}
+.map iframe{width:100%;height:320px;border:0;border-radius:14px;margin-top:18px}
+.hp-photo-note{font-size:13px;background:var(--paper);border-left:5px solid var(--sun);padding:8px 12px}
+.credits{font-size:12px;line-height:1.7;padding-left:1.2em}
+.credits li{margin-bottom:4px}
+footer{background:var(--teal);color:#fff;padding:26px 0;text-align:center;font-size:14px}
+footer a{color:var(--butter)}
+@media(max-width:720px){.hero .in,.two{grid-template-columns:1fr}.grid{grid-template-columns:repeat(2,1fr)}.top nav ul{padding-right:0}dl{grid-template-columns:1fr}}
