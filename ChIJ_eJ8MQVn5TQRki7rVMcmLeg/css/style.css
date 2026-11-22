@@ -1,77 +1,64 @@
-*{box-sizing:border-box;margin:0;padding:0}
-:root{--g:#1f4d3a;--g2:#2f6b50;--y:#f4b41a;--ink:#16231d;--bg:#f3f8f5;--w:#fff;--m:#cfe5d8}
+:root{--bg:#f7f0e6;--sand:#ebdfd2;--card:#f0e4d3;--ink:#3a2c3f;--plum:#7a4f6b;--deep:#5b3a4e;--rust:#b8442f}
+*{box-sizing:border-box}
 html{scroll-behavior:smooth}
-body{font-family:"Zen Maru Gothic",sans-serif;color:var(--ink);background:var(--bg);line-height:1.9;font-size:16px;overflow-x:hidden}
-img{max-width:100%;display:block}a{color:var(--g2)}
-.in{max-width:1040px;margin:0 auto;padding:0 20px}
-.top{position:sticky;top:0;z-index:50;background:var(--g);color:#fff;display:flex;align-items:center;justify-content:space-between;gap:12px;padding:8px 16px;padding-right:96px}
-.logo{font:400 24px/1 "Dela Gothic One",sans-serif;color:var(--y);text-decoration:none;letter-spacing:.05em}
-.board{list-style:none;display:flex;gap:4px;flex-wrap:wrap}
-.board a{display:flex;flex-direction:column;align-items:center;min-width:56px;padding:4px 8px;border:2px solid var(--m);border-radius:8px;color:#fff;text-decoration:none;font-size:11px;line-height:1.3}
-.board b{font:400 13px "Dela Gothic One",sans-serif;color:var(--y)}
-.board a[aria-current]{background:var(--y);color:var(--ink);border-color:var(--y)}.board a[aria-current] b{color:var(--ink)}
-.hero{background:var(--g);color:#fff;padding:40px 0 0;position:relative}
-.hero .in{display:grid;grid-template-columns:auto 1fr;gap:12px 28px;align-items:start}
-.k{font-size:13px;letter-spacing:.15em;color:var(--y);font-weight:700;grid-column:1/-1}
-.hero h1{grid-row:2/5;grid-column:1}
-.v{writing-mode:vertical-rl;font:400 clamp(84px,18vw,170px)/1 "Dela Gothic One",sans-serif;color:var(--y);letter-spacing:.06em;display:block}
-.lead{font-size:16px;max-width:36em}
-.hero .lead{grid-column:2}.hero .btns{grid-column:2}
-.btns{display:flex;gap:10px;flex-wrap:wrap;margin:16px 0}
-.btn{display:inline-block;padding:10px 20px;background:var(--y);color:var(--ink);border-radius:999px;font-weight:700;text-decoration:none;border:2px solid var(--y)}
-.btn.ghost{background:transparent;color:#fff;border-color:#fff}
-.dice{grid-column:2;display:flex;gap:8px}
-.dice i{width:26px;height:26px;border-radius:6px;background:var(--m);position:relative}
-.dice i::after{content:"";position:absolute;inset:9px;border-radius:50%;background:var(--g)}
-.herophoto{margin-top:28px}
-.herophoto .ph img{width:100%;height:380px;object-fit:cover}
-.ph{position:relative}.ph figcaption{font-size:11px;color:#556;background:var(--w);padding:3px 8px}
-.band{padding:56px 0}.band.light{background:var(--m)}
-.assoc{background:var(--y)}.assoc .k{color:var(--g)}
-h2{font:400 clamp(21px,4.4vw,32px)/1.4 "Dela Gothic One",sans-serif;color:var(--g);margin-bottom:14px}
-.assoc h2{color:var(--ink)}
-.course{padding:56px 0;background:var(--w)}.course .k{color:var(--g2)}
-.path{list-style:none;display:grid;grid-template-columns:repeat(2,1fr);gap:20px 16px;margin:18px 0;padding-bottom:24px}
-.path li{border:3px solid var(--g);border-radius:14px;overflow:hidden;background:var(--bg)}
-.path li p{padding:8px 12px;font-size:14px}
-.path .no{display:inline-block;background:var(--g);color:var(--y);font:400 14px "Dela Gothic One",sans-serif;padding:4px 14px;border-radius:0 0 12px 0}
-.path .ph img{aspect-ratio:4/3;object-fit:cover;width:100%}
-.path .s1,.path .s3{transform:translateY(24px)}
-.path .s4{grid-column:1/-1}.path .s4 .ph img{aspect-ratio:16/7}
-.note,.imagine{font-size:13px;color:#445;background:var(--m);padding:10px 14px;border-radius:8px;margin:12px 0}
-.pagehead{background:var(--g);color:#fff;padding:36px 0 30px}
-.pagehead h1{font:400 clamp(30px,7vw,52px)/1.2 "Dela Gothic One",sans-serif;color:var(--y);margin:6px 0}
-.num{font-weight:700;font-size:13px;color:var(--y);letter-spacing:.1em}
-.num span{display:inline-grid;place-items:center;width:30px;height:30px;margin-right:8px;background:var(--y);color:var(--ink);border-radius:6px;font:400 16px "Dela Gothic One",sans-serif}
-.pagehead .num{color:#fff}
-.two{display:grid;grid-template-columns:1fr 1fr;gap:28px;align-items:start}
-.facts{padding-left:1.2em}.facts li{margin:6px 0}
-.ph.tall img{max-height:420px;width:100%;object-fit:cover}
-.trio{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:16px}
-.trio .ph img{aspect-ratio:1/1;object-fit:cover;width:100%}
-.tt{width:100%;border-collapse:collapse;background:var(--w)}
-.tt th,.tt td{border:1px solid var(--m);padding:8px 12px;text-align:left;font-size:15px}
-.tt th{width:7em;background:var(--m);color:var(--g)}
-.pending{display:inline-block;padding:0 10px;background:var(--y);color:var(--ink);border-radius:999px;font-weight:700;font-size:13px}
-.blank{border:3px dashed var(--g);border-radius:16px;padding:28px;text-align:center;margin-bottom:28px}
-.blank .big{font:400 clamp(36px,9vw,64px)/1.2 "Dela Gothic One",sans-serif;color:var(--g)}
-.vgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin:18px 0}
-.vcard{background:var(--w);border:2px solid var(--g);border-radius:14px;padding:18px}
-.vcard:nth-child(2){transform:translateY(16px)}
-.voice-sample-tag{display:inline-block;background:var(--y);font-size:12px;font-weight:700;padding:1px 10px;border-radius:999px;margin-bottom:8px}
-.vcard blockquote{font-size:15px}.vcard figcaption{font-size:12px;color:#556;margin-top:8px}
-.vph{margin-top:36px}.vph .ph img{width:100%;max-height:300px;object-fit:cover}
-.map iframe{width:100%;height:340px;border:0;border-radius:12px}
-.foot{background:var(--g);color:#e8f2ec;padding:40px 0 70px;font-size:14px}
-.foot a{color:var(--y)}.footin{max-width:1040px;margin:0 auto;padding:0 20px}
-.fn{font:400 28px "Dela Gothic One",sans-serif;color:var(--y);margin-bottom:8px}
-.credits{margin-top:20px;font-size:11px;line-height:1.7;opacity:.9}
-.credits ul{padding-left:1.2em;margin:8px 0}.credits li{margin:3px 0;word-break:break-word}
-.design{margin-top:14px;font-size:12px}
-@media(max-width:720px){
-.v{font-size:clamp(72px,26vw,120px)}
-.two,.vgrid{grid-template-columns:1fr}.trio{grid-template-columns:1fr 1fr}
-.vcard:nth-child(2){transform:none}
-.top{flex-wrap:wrap;padding-right:80px}.board a{min-width:48px;padding:3px 5px;font-size:10px}
-.path .s1,.path .s3{transform:none}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:"Zen Maru Gothic","Hiragino Maru Gothic ProN",Meiryo,sans-serif;line-height:1.95;font-size:16px;overflow-x:hidden;padding-bottom:48px}
+img{max-width:100%;display:block}
+a{color:var(--plum)}
+h1,h2,h3,.logo,.fn{font-family:"Shippori Mincho","Yu Mincho",serif;font-weight:700}
+.top{position:sticky;top:0;z-index:50;display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:6px 24px;padding:12px 20px;background:var(--bg);border-bottom:2px solid var(--deep)}
+.logo{font-size:26px;letter-spacing:.2em;color:var(--deep);text-decoration:none}
+.top ul{display:flex;flex-wrap:wrap;gap:4px 18px;list-style:none;margin:0;padding:0}
+.top ul a{text-decoration:none;color:var(--ink);font-weight:700;font-size:14px;padding:2px 0;border-bottom:2px solid transparent}
+.top ul a:hover{border-bottom-color:var(--rust)}
+.in{max-width:1000px;margin:0 auto;padding:0 20px}
+section{padding:64px 0}
+.k{font-size:12px;letter-spacing:.25em;color:var(--rust);font-weight:700;margin:0 0 6px}
+h2{font-size:28px;color:var(--deep);margin:0 0 20px;line-height:1.5}
+.hero{display:grid;grid-template-columns:1.05fr 1fr;gap:0;background:var(--deep);color:#fff}
+.hero .txt{padding:64px 40px;display:flex;flex-direction:column;justify-content:center}
+.hero h1{font-size:64px;letter-spacing:.3em;margin:0 0 16px;line-height:1.2}
+.hero .lead{font-family:"Shippori Mincho",serif;font-size:20px;line-height:2;margin:0 0 24px}
+.hero .k{color:var(--sand)}
+.hero figure{margin:0;min-height:380px}
+.hero figure img{width:100%;height:100%;object-fit:cover}
+.btns{display:flex;gap:12px;flex-wrap:wrap}
+.btn{display:inline-block;padding:10px 22px;background:var(--rust);color:#fff;text-decoration:none;font-weight:700;border-radius:3px}
+.btn.ghost{background:transparent;border:2px solid #fff}
+figure.ph{margin:0}
+figure.ph img{width:100%;height:100%;object-fit:cover}
+figcaption{font-size:11px;color:var(--plum);padding-top:4px}
+.hero figcaption{color:var(--sand);padding:4px 8px}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:32px;align-items:center}
+.two .ph img{aspect-ratio:4/3}
+.band{background:var(--sand)}
+.fact{background:var(--card);border-left:4px solid var(--plum);padding:14px 18px;margin:16px 0;font-size:15px}
+.shelfrow{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:24px}
+.shelfrow .ph img{aspect-ratio:1/1}
+.menu{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.menu article{background:var(--bg);border:1px solid var(--plum);padding:12px}
+.menu .ph img{aspect-ratio:4/3}
+.menu h3{margin:10px 0 4px;color:var(--deep);font-size:18px}
+.menu p{margin:0;font-size:14px}
+.pending{display:inline-block;background:var(--rust);color:#fff;font-size:12px;padding:0 10px;border-radius:10px}
+.voices{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.voice{background:var(--card);padding:20px;position:relative}
+.badge{display:inline-block;background:var(--deep);color:#fff;font-size:11px;padding:1px 10px;margin-bottom:8px}
+.voice p{margin:0 0 6px;font-size:15px}.voice small{color:var(--plum)}
+table.tt{border-collapse:collapse;width:100%;margin:12px 0 24px}
+.tt th,.tt td{text-align:left;padding:10px 12px;border-bottom:1px solid var(--plum);vertical-align:top}
+.tt th{width:8em;color:var(--deep)}
+.map iframe{width:100%;height:340px;border:0;display:block}
+.foot{background:var(--deep);color:#fff;padding:40px 0;font-size:14px}
+.foot a{color:var(--sand)}
+.fn{font-size:24px;letter-spacing:.3em}
+.credits{font-size:12px;line-height:1.7;margin-top:20px}
+.credits ul{padding-left:1.2em}
+.design{font-size:12px;margin-top:16px}
+.hp-photo-note{position:fixed;left:0;right:0;bottom:0;z-index:900;background:var(--ink);color:#fff;font-size:12px;text-align:center;padding:8px 12px;line-height:1.5}
+@media(max-width:760px){
+.hero,.two{grid-template-columns:1fr}
+.hero .txt{padding:40px 20px}.hero h1{font-size:48px}
+.shelfrow,.menu,.voices{grid-template-columns:1fr}
+.hero figure{min-height:240px}
+section{padding:44px 0}h2{font-size:23px}
 }
