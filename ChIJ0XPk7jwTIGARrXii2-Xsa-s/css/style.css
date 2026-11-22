@@ -1,0 +1,79 @@
+*{box-sizing:border-box}
+:root{--bg:#f3eadf;--panel:#fdf7ef;--ink:#2a2530;--glow:#e5521c;--glow2:#f6b23c;--steel:#4a6f86;--line:#d6c8b8;--soft:#ede0d2;--mut:#5d5360;--deep:#a8380e}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 16px/1.9 "Noto Sans JP",system-ui,sans-serif;padding-bottom:64px;overflow-x:hidden}
+img{max-width:100%;display:block}
+a{color:var(--steel)}
+.top{display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:8px 20px;padding:12px 16px;background:var(--panel);border-bottom:5px solid var(--glow);position:relative}
+.top::after{content:"";position:absolute;left:0;right:0;bottom:-11px;height:5px;background:repeating-linear-gradient(90deg,var(--glow2) 0 22px,transparent 22px 30px)}
+.logo,.fn,.big{font-family:"Dela Gothic One","Noto Sans JP",sans-serif;font-weight:400;text-decoration:none;color:var(--ink)}
+.logo{font-size:24px;line-height:1.2;padding-right:90px}
+nav ul{list-style:none;margin:0;padding:0;display:flex;flex-wrap:wrap;gap:4px 6px}
+nav a{display:flex;align-items:center;gap:6px;text-decoration:none;color:var(--ink);font-size:.86rem;padding:3px 10px 3px 4px;border:1.5px solid var(--ink);border-radius:20px;line-height:1.6}
+nav a b{display:inline-grid;place-items:center;width:22px;height:22px;border-radius:50%;background:var(--ink);color:#fff;font:700 .8rem/1 "Noto Sans JP",sans-serif}
+nav a[aria-current]{background:var(--glow);border-color:var(--glow);color:#fff}
+nav a[aria-current] b{background:#fff;color:var(--deep)}
+main{display:block;margin-top:16px}
+.k{font-size:.78rem;letter-spacing:.2em;color:var(--deep);font-weight:700;margin:0 0 6px}
+h1,h2,h3{line-height:1.35;margin:0 0 12px}
+h2{font-size:1.5rem}
+.hero{display:grid;grid-template-columns:auto 1fr 1fr;gap:20px;align-items:center;max-width:1100px;margin:0 auto;padding:36px 16px 44px}
+.vt{writing-mode:vertical-rl;margin:0;font-weight:700;letter-spacing:.35em;font-size:1rem;color:var(--mut);border-left:3px solid var(--glow2);padding-left:10px}
+.big{font-size:clamp(44px,9vw,92px);line-height:1.12;margin:0 0 18px}
+.lead{max-width:30em}
+.hsvg{width:100%;height:auto;display:block}
+.hsvg text{fill:#fff;font:700 15px "Noto Sans JP",sans-serif}
+.btns{display:flex;flex-wrap:wrap;gap:10px;margin:18px 0 0}
+.btn{display:inline-block;padding:9px 22px;background:var(--glow);color:#fff;text-decoration:none;font-weight:700;border:2px solid var(--glow);border-radius:4px}
+.btn.ghost{background:transparent;color:var(--ink);border-color:var(--ink)}
+.band{padding:44px 16px}
+.band.alt{background:var(--soft)}
+.band.dark{background:var(--ink);color:var(--panel)}
+.band.dark .k{color:var(--glow2)}
+.in{max-width:1000px;margin:0 auto}
+.legend{list-style:none;margin:20px 0 0;padding:0;display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:12px}
+.legend li{display:flex;gap:12px;align-items:flex-start;background:var(--panel);border:2px solid var(--ink);padding:12px;line-height:1.6}
+.legend b,.prow b{flex:none;display:grid;place-items:center;width:34px;height:34px;border-radius:50%;background:var(--ink);color:#fff;font:700 1.1rem/1 "Noto Sans JP",sans-serif}
+.legend strong{display:block;font-size:1.05rem}
+.legend span{font-size:.9rem}
+.strip{padding:8px 16px 36px;max-width:1100px;margin:0 auto}
+.strip-in,.stag{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:14px;align-items:start}
+.strip-in .b{margin-top:22px}.strip-in .c{margin-top:6px}.strip-in .d{margin-top:30px}
+.ph{margin:0;border:3px solid var(--ink);background:var(--panel);position:relative}
+.ph img{width:100%;aspect-ratio:4/3;object-fit:cover}
+.ph::after{content:"";position:absolute;left:-3px;top:-3px;width:36px;height:12px;background:var(--glow)}
+.trio{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+.duo{display:grid;grid-template-columns:repeat(2,1fr);gap:14px}
+.note{font-size:.82rem;color:var(--mut);margin:14px 0 0}
+.tt{width:100%;border-collapse:collapse;background:var(--panel);margin:12px 0}
+.tt th,.tt td{text-align:left;padding:11px 14px;border:1px solid var(--line);vertical-align:top}
+.tt th{width:7.5em;background:var(--soft);font-weight:700;white-space:nowrap}
+.pending{color:var(--mut)}
+.phead{max-width:1000px;margin:0 auto;padding:40px 16px 24px}
+.phead h1{font-size:clamp(1.9rem,6vw,3.2rem);border-left:10px solid var(--glow);padding-left:14px}
+.parts{margin-top:20px;border-top:3px solid var(--ink)}
+.prow{display:flex;gap:16px;padding:16px 4px;border-bottom:1px dashed var(--steel)}
+.prow h3{font-size:1.1rem;margin:0 0 2px}.prow p{margin:0;color:var(--mut)}
+.vlist{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:16px;list-style:none;padding:0;margin:16px 0 0}
+.vc{background:var(--panel);border:2px solid var(--ink);padding:18px;position:relative}
+.vc p{margin:10px 0 0}
+.voice-sample-tag{display:inline-block;font-size:.72rem;font-weight:700;background:var(--glow2);color:var(--ink);padding:2px 10px;border-radius:3px}
+.mapbox{margin-top:18px;border:3px solid var(--ink);background:var(--panel)}
+.mapbox iframe{width:100%;height:340px;border:0;display:block}
+.foot{background:var(--ink);color:var(--panel);padding:40px 16px 28px;margin-top:20px}
+.footin{max-width:1000px;margin:0 auto}
+.fn{font-size:1.6rem;margin-bottom:8px;color:var(--panel)}
+.foot a{color:var(--glow2)}
+.credits{font-size:.74rem;line-height:1.7;margin-top:22px;border-top:1px solid var(--steel);padding-top:14px;opacity:.95}
+.credits ul{padding-left:1.2em;margin:8px 0}
+.design{font-size:.78rem;margin:18px 0 0}
+.hp-photo-note{position:fixed;left:0;right:0;bottom:0;z-index:900;background:var(--ink);color:var(--panel);font-size:.72rem;line-height:1.5;padding:7px 12px;text-align:center}
+@media(max-width:760px){
+.hero{grid-template-columns:1fr;padding-top:24px}
+.vt{writing-mode:horizontal-tb;border-left:0;border-bottom:3px solid var(--glow2);padding:0 0 6px;letter-spacing:.15em}
+.hr{order:2}
+.trio{grid-template-columns:1fr}
+.strip-in .b,.strip-in .c,.strip-in .d{margin-top:0}
+.tt th{white-space:normal;width:6em}
+.logo{padding-right:80px}
+}
