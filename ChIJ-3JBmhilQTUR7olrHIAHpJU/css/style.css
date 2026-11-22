@@ -68,3 +68,6 @@ a{color:inherit;text-underline-offset:3px}
 .design{font-size:.78rem;opacity:.8}
 .hp-photo-note{position:fixed;left:0;right:0;bottom:0;background:var(--line);color:var(--panel);font-size:.72rem;text-align:center;padding:6px 10px;z-index:900}
 @media(max-width:720px){.hd,.hd2,.split{grid-template-columns:1fr}.tt th{width:5.5em}}
+
+.duo{display:grid;grid-template-columns:repeat(2,1fr);gap:12px}
+@media(max-width:720px){.duo{grid-template-columns:1fr}}
