@@ -1,86 +1,30 @@
 *{box-sizing:border-box;margin:0;padding:0}
-:root{--ink:#1f1a3d;--lilac:#ece6ff;--paper:#fbf9ff;--red:#ff4b3e;--lemon:#ffd93b;--mint:#19c3a6}
+:root{--crust:#7b3a1c;--crumb:#fbf0dc;--flour:#fff6e8;--jam:#c2412d;--honey:#e6a12f;--sage:#5f7a55}
 html{scroll-behavior:smooth}
-body{font-family:"Zen Maru Gothic",sans-serif;color:var(--ink);background:var(--lilac);line-height:1.9;overflow-x:hidden;padding-bottom:48px}
-a{color:#c8261b}img{max-width:100%;display:block}
-.top{display:flex;flex-wrap:wrap;gap:8px 20px;align-items:center;justify-content:space-between;padding:12px 5vw;background:var(--paper);border-bottom:4px solid var(--ink)}
-.logo{font:400 26px/1 "Mochiy Pop One",sans-serif;color:var(--ink);text-decoration:none}
-.logo b{color:var(--red);font-weight:400;text-shadow:2px 2px 0 var(--lemon)}
-.top ul{list-style:none;display:flex;flex-wrap:wrap;gap:6px}
-.top nav a{display:block;padding:4px 12px;border:3px solid var(--ink);border-radius:99px;background:#fff;color:var(--ink);text-decoration:none;font-weight:700;font-size:14px;box-shadow:3px 3px 0 var(--ink)}
-.top nav a[aria-current]{background:var(--lemon)}
-.in{max-width:1000px;margin:0 auto;padding:0 5vw}
-.hero{position:relative;overflow:hidden;padding:56px 0 64px;background:var(--mint);border-bottom:4px solid var(--ink)}
-.stage{position:absolute;right:2vw;top:10px;height:100%;width:44%;pointer-events:none}
-.stage span{position:absolute;font:400 clamp(90px,20vw,230px)/1 "Mochiy Pop One",sans-serif;right:0;white-space:nowrap}
-.stage .p3{top:20px;right:-10px;color:#0f8d78}
-.stage .p2{top:34px;right:2px;color:var(--lemon)}
-.stage .p1{top:48px;right:14px;color:var(--red);-webkit-text-stroke:3px var(--ink);text-shadow:8px 8px 0 var(--ink)}
-.heroin{position:relative;max-width:1000px;margin:0 auto;padding:0 5vw}
-.k{display:inline-block;font-weight:700;font-size:13px;background:var(--ink);color:#fff;padding:2px 12px;border-radius:4px;margin-bottom:12px}
-h1{font:400 clamp(34px,8vw,72px)/1.12 "Mochiy Pop One",sans-serif;margin-bottom:16px}
-h1 em{font-style:normal;color:#fff;-webkit-text-stroke:2px var(--ink);text-shadow:5px 5px 0 var(--ink);letter-spacing:.02em}
-.lead{max-width:30em;margin-bottom:22px;background:var(--paper);border:3px solid var(--ink);border-radius:12px;padding:12px 16px;box-shadow:5px 5px 0 var(--ink)}
-.btns{display:flex;flex-wrap:wrap;gap:12px}
-.btn{display:inline-block;padding:10px 24px;border:3px solid var(--ink);border-radius:99px;background:var(--red);color:#fff;font-weight:700;text-decoration:none;box-shadow:4px 4px 0 var(--ink)}
-.btn.alt{background:var(--lemon);color:var(--ink)}
-.band{padding:56px 0}
-.band.tint{background:var(--paper);border-top:4px solid var(--ink);border-bottom:4px solid var(--ink)}
-h2{font:400 clamp(22px,4.4vw,34px)/1.4 "Mochiy Pop One",sans-serif;margin-bottom:14px}
-.assoc,.imagine{background:#fff;border:3px dashed var(--ink);border-radius:10px;padding:14px 18px;max-width:42em}
-.imagine{margin-bottom:22px;font-size:14px}
-.note{font-size:13px;margin:6px 0 16px}
-.popup{position:relative;margin-top:28px;min-height:560px}
-.L{position:absolute;width:56%}
-.L .tag{position:absolute;z-index:2;top:-14px;left:12px;background:var(--ink);color:#fff;font-weight:700;font-size:12px;padding:1px 12px;border-radius:99px}
-.l1{left:0;top:0;transform:rotate(-3deg)}
-.l2{right:0;top:90px;width:50%;transform:rotate(2.5deg)}
-.l3{left:14%;top:290px;width:54%;transform:rotate(-1.5deg)}
-.ph{border:4px solid var(--ink);border-radius:10px;background:#fff;box-shadow:8px 8px 0 var(--ink);overflow:hidden}
+body{font-family:"Zen Maru Gothic",sans-serif;color:var(--crust);background:var(--crumb);line-height:1.9;padding-bottom:48px;overflow-x:hidden}
+a{color:var(--jam)}img{max-width:100%;display:block}
+.top{position:sticky;top:0;z-index:50;display:flex;flex-wrap:wrap;gap:6px 20px;align-items:center;justify-content:space-between;padding:10px 5vw;background:var(--flour);border-bottom:3px solid var(--crust)}
+.logo{font:400 22px/1 "Mochiy Pop One",sans-serif;color:var(--crust);text-decoration:none}.logo b{color:var(--jam)}
+nav ul{display:flex;flex-wrap:wrap;gap:4px 16px;list-style:none;margin-right:70px}nav a{text-decoration:none;color:var(--crust);font-weight:700;font-size:14px}
+.hero{display:grid;grid-template-columns:1.1fr 1fr;gap:28px;align-items:center;padding:48px 5vw;max-width:1100px;margin:0 auto}
+.hero .k{font-size:13px;color:var(--sage);font-weight:700}
+h1{font:400 clamp(38px,8vw,72px)/1.05 "Mochiy Pop One",sans-serif;margin:8px 0 14px}h1 em{font-style:normal;color:var(--jam)}
+.lead{font-size:17px;font-weight:700}
+.btns{display:flex;gap:10px;flex-wrap:wrap;margin-top:18px}
+.btn{display:inline-block;padding:10px 22px;border-radius:999px;background:var(--jam);color:#fff;text-decoration:none;font-weight:700}.btn.alt{background:var(--flour);color:var(--crust);border:2px solid var(--crust)}
+.ph{border:6px solid var(--flour);box-shadow:0 4px 0 var(--honey);border-radius:10px;overflow:hidden;background:var(--flour)}
 .ph img{width:100%;aspect-ratio:4/3;object-fit:cover}
-.ph.tall img{aspect-ratio:3/4}
-.ph figcaption{font-size:11px;padding:3px 8px;border-top:3px solid var(--ink);background:var(--lemon)}
-.pagehead{background:var(--lemon);border-bottom:4px solid var(--ink);padding:44px 0 34px}
-.pagehead h1{font-size:clamp(28px,6vw,52px);margin-bottom:8px}
-.pagehead .lead{margin-bottom:0}
-.two{display:grid;grid-template-columns:1.2fr 1fr;gap:32px;align-items:start}
-.three{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;margin-top:26px}
-.three .ph:nth-child(2){transform:translateY(14px) rotate(1.5deg)}
-.three .ph:nth-child(1){transform:rotate(-1.5deg)}
-.facts{list-style:none}
-.facts li{padding:8px 0 8px 30px;position:relative;border-bottom:2px dotted var(--ink)}
-.facts li::before{content:"";position:absolute;left:4px;top:15px;width:14px;height:14px;border:3px solid var(--ink);border-radius:50%;background:var(--red)}
-.tate{float:right;margin:0 0 16px 24px;writing-mode:vertical-rl;font:400 clamp(22px,4vw,34px)/1.6 "Mochiy Pop One",sans-serif;background:var(--red);color:#fff;padding:14px 12px;border:3px solid var(--ink);box-shadow:5px 5px 0 var(--ink)}
-.tt{width:100%;border-collapse:collapse;background:#fff;border:3px solid var(--ink);box-shadow:5px 5px 0 var(--ink)}
-.tt th,.tt td{padding:9px 12px;border-bottom:2px solid var(--ink);text-align:left;vertical-align:top}
-.tt th{width:7em;background:var(--lemon);font-size:14px}
-.pending{display:inline-block;background:var(--mint);border:2px solid var(--ink);border-radius:99px;padding:0 12px;font-size:13px;font-weight:700}
-.vlist{display:grid;gap:22px}
-.vcard{position:relative;background:#fff;border:3px solid var(--ink);border-radius:14px;padding:30px 20px 16px;box-shadow:6px 6px 0 var(--ink)}
-.vcard:nth-child(2){margin-left:5vw}
-.vcard figcaption{font-size:12px;margin-top:8px;color:#5a5380}
-.voice-sample-tag{position:absolute;top:-13px;left:16px;background:var(--red);color:#fff;border:3px solid var(--ink);border-radius:99px;font-size:12px;font-weight:700;padding:0 12px}
-.map{margin-top:28px;border:4px solid var(--ink);box-shadow:8px 8px 0 var(--ink);background:#fff}
-.map iframe{width:100%;height:360px;border:0;display:block}
-.foot{background:var(--ink);color:#e9e5ff;padding:44px 0 30px}
-.foot a{color:var(--lemon)}
-.footin{max-width:1000px;margin:0 auto;padding:0 5vw;font-size:14px}
-.fn{font:400 26px/1.2 "Mochiy Pop One",sans-serif;color:var(--lemon);margin-bottom:10px}
-.credits{margin-top:22px;font-size:11px;line-height:1.7;opacity:.85}
-.credits ul{list-style:none;margin:8px 0}
-.credits li{padding:2px 0;word-break:break-word}
-.design{margin-top:16px;font-size:12px}
-.hp-photo-note{position:fixed;left:0;right:0;bottom:0;z-index:900;background:var(--lemon);color:var(--ink);border-top:3px solid var(--ink);font-size:11px;text-align:center;padding:6px 12px;line-height:1.5}
-@media(max-width:760px){
-.stage{width:70%;opacity:.55}
-.two{grid-template-columns:1fr}
-.three{grid-template-columns:1fr 1fr}
-.three .ph:nth-child(3){grid-column:1/-1}
-.popup{min-height:0;display:grid;gap:30px}
-.L{position:relative;width:88%;left:auto;right:auto;top:auto}
-.l2{margin-left:auto}
-.l3{margin-left:6%}
-.vcard:nth-child(2){margin-left:0}
-.top{justify-content:center}
-.map iframe{height:280px}
-}
+.sec{padding:48px 5vw}.sec.tint{background:var(--flour)}.in{max-width:1000px;margin:0 auto}
+h2{font:400 28px/1.3 "Mochiy Pop One",sans-serif;margin:4px 0 14px}.k{font-size:13px;color:var(--sage);font-weight:700}
+.note{font-size:13px;background:var(--honey);color:var(--crust);display:inline-block;padding:2px 10px;border-radius:6px;margin:6px 0}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:18px;margin-top:18px}
+.card{background:var(--flour);border:2px solid var(--crust);border-radius:12px;overflow:hidden}.card img{width:100%;aspect-ratio:4/3;object-fit:cover}.card div{padding:10px 14px}.card h3{font-size:17px}
+.pending{display:inline-block;background:var(--crumb);border:1px dashed var(--crust);padding:0 10px;border-radius:6px;font-size:13px}
+.voice{background:var(--crumb);border-left:6px solid var(--jam);padding:14px 18px;margin-top:14px;border-radius:6px}
+.badge{display:inline-block;background:var(--sage);color:#fff;font-size:12px;padding:1px 10px;border-radius:999px;margin-bottom:4px}
+.tt{border-collapse:collapse;width:100%;margin:12px 0}.tt th,.tt td{border-bottom:1px solid var(--crust);padding:8px;text-align:left;vertical-align:top}.tt th{width:7em}
+iframe{width:100%;height:320px;border:0;border-radius:10px;margin-top:10px}
+.foot{background:var(--crust);color:var(--crumb);padding:36px 5vw;font-size:13px}.foot a{color:var(--honey)}.footin{max-width:1000px;margin:0 auto}.fn{font:400 22px "Mochiy Pop One",sans-serif;margin-bottom:8px}
+.credits{margin-top:16px;font-size:12px}.credits li{margin:4px 0 4px 1.2em}.design{margin-top:14px}
+.hp-photo-note{position:fixed;left:0;right:0;bottom:0;z-index:900;background:var(--honey);color:var(--crust);border-top:3px solid var(--crust);font-size:11px;text-align:center;padding:6px 12px;line-height:1.5}
+@media(max-width:760px){.hero{grid-template-columns:1fr}nav ul{margin-right:0}}
