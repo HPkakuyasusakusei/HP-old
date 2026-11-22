@@ -1,97 +1,63 @@
-:root{--paper:#e8ecf0;--paper2:#f7f9fb;--ink:#141b26;--blue:#1d4ed8;--yel:#f5c400;--line:#141b26;--mute:#4a5565}
-*{box-sizing:border-box}
-html{scroll-behavior:smooth}
-body{margin:0;color:var(--ink);background:var(--paper);background-image:linear-gradient(rgba(29,78,216,.09) 1px,transparent 1px),linear-gradient(90deg,rgba(29,78,216,.09) 1px,transparent 1px);background-size:24px 24px;font-family:"Zen Kaku Gothic New","Hiragino Kaku Gothic ProN",Meiryo,sans-serif;line-height:1.85;font-size:16px;-webkit-text-size-adjust:100%;padding-bottom:64px}
-img{max-width:100%;height:auto;display:block}
-a{color:var(--blue)}
-.in{max-width:1080px;margin:0 auto;padding:0 16px}
-.top{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:8px 20px;padding:10px 16px;background:var(--ink);color:#fff;border-bottom:6px solid var(--yel)}
-.logo{color:#fff;text-decoration:none;font:800 22px/1.1 "Barlow Condensed",sans-serif;letter-spacing:.08em}
-.logo small{display:block;font:400 10px/1.4 "Zen Kaku Gothic New",sans-serif;letter-spacing:.2em;color:#b9c3d3}
-.top ul{list-style:none;margin:0;padding:0;display:flex;flex-wrap:wrap;gap:4px 14px}
-.top li a{color:#fff;text-decoration:none;font-size:13px;font-weight:700;padding:4px 0;border-bottom:2px solid transparent}
-.top li a i{font:800 11px "Barlow Condensed",sans-serif;font-style:normal;color:var(--yel);margin-right:5px;letter-spacing:.08em}
-.top li a[aria-current]{border-bottom-color:var(--yel)}
-.k{font:800 13px/1.4 "Barlow Condensed",sans-serif;letter-spacing:.22em;color:var(--blue);margin:0 0 6px;text-transform:uppercase}
-h1,h2{line-height:1.3;margin:0 0 .6em}
-h2{font-size:clamp(21px,3.6vw,30px);font-weight:900;display:inline-block;border-bottom:4px solid var(--yel);padding-bottom:2px}
-.lead{font-size:16px;max-width:36em}
-.note{font-size:13px;color:var(--mute)}
-.band{padding:44px 0}
-.band.light{background:rgba(247,249,251,.92);border-top:2px solid var(--ink);border-bottom:2px solid var(--ink)}
-/* cover */
-.cover{padding:36px 0 28px;border-bottom:2px solid var(--ink);background:var(--paper2)}
-.cover .in{display:grid;grid-template-columns:1.2fr .8fr;gap:24px;position:relative}
-.cover h1{margin:0}
-.cover .en{display:block;font:800 clamp(52px,11vw,128px)/.88 "Barlow Condensed",sans-serif;letter-spacing:.02em}
-.mo{display:inline-block;margin:12px 0;padding:2px 10px;border:2px solid var(--ink);font:600 14px "Barlow Condensed",sans-serif;letter-spacing:.12em}
-.vt{position:absolute;right:16px;top:0;margin:0;writing-mode:vertical-rl;font-weight:900;font-size:clamp(26px,5vw,48px);letter-spacing:.3em;color:var(--blue);line-height:1}
-.covimg{grid-column:1/-1}
-.covimg .ph img{aspect-ratio:16/8;object-fit:cover;width:100%}
-.btns{display:flex;flex-wrap:wrap;gap:10px;margin-top:14px}
-.btn{display:inline-block;padding:10px 22px;background:var(--ink);color:#fff;text-decoration:none;font-weight:700;border:2px solid var(--ink);box-shadow:4px 4px 0 var(--yel)}
-.btn.ghost{background:#fff;color:var(--ink)}
-/* photos */
-.ph{margin:0;border:2px solid var(--ink);background:#fff;position:relative}
-.ph img{width:100%}
-.ph figcaption{font-size:12px;padding:4px 8px;border-top:2px solid var(--ink);color:var(--mute);background:var(--paper2)}
-.pn{position:absolute;left:-2px;top:-2px;z-index:2;min-width:32px;height:32px;display:flex;align-items:center;justify-content:center;background:var(--yel);color:var(--ink);font:800 20px "Barlow Condensed",sans-serif;border:2px solid var(--ink)}
-.parts{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
-.part img{aspect-ratio:4/3;object-fit:cover}
-.three{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:22px}
-.three .ph img{aspect-ratio:4/3;object-fit:cover}
-.two{display:grid;grid-template-columns:1fr 1fr;gap:28px;align-items:start}
-.two.rev{grid-template-columns:1.2fr .8fr}
-.tall img{aspect-ratio:3/4;object-fit:cover}
-/* steps */
-.steps{list-style:none;margin:20px 0 0;padding:0;display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
-.steps a{display:block;height:100%;padding:14px;background:#fff;border:2px solid var(--ink);text-decoration:none;color:var(--ink);box-shadow:5px 5px 0 var(--blue)}
-.steps b{display:block;font:800 64px/1 "Barlow Condensed",sans-serif;color:var(--blue)}
-.steps span{display:block;font-weight:900;font-size:18px}
-.steps i{font-style:normal;font-size:13px;color:var(--mute)}
-.stephead{padding:34px 0;background:var(--paper2);border-bottom:2px solid var(--ink)}
-.stephead .in{display:flex;gap:22px;align-items:center}
-.stepno{flex:none;width:clamp(88px,16vw,150px);aspect-ratio:1;background:var(--ink);color:var(--yel);display:flex;align-items:center;justify-content:center;font:800 clamp(64px,12vw,120px)/1 "Barlow Condensed",sans-serif}
-.stephead h1{font-size:clamp(30px,6vw,52px);font-weight:900;margin:0 0 6px}
-/* warn */
-.warn{display:flex;gap:14px;align-items:flex-start;margin:0 0 24px;padding:12px 16px;border:2px solid var(--ink);background:#fff8d6}
-.warn .tri{flex:none;width:34px;height:30px;background:var(--yel);clip-path:polygon(50% 0,100% 100%,0 100%);display:flex;align-items:flex-end;justify-content:center;font-weight:900;padding-bottom:1px}
-.warn b{display:block;font-size:14px;letter-spacing:.2em}
-.warn p{margin:0;font-size:14px}
-/* tables */
-.tt{width:100%;border-collapse:collapse;background:#fff;border:2px solid var(--ink);margin-bottom:12px}
-.tt th,.tt td{padding:10px 12px;border:1px solid var(--ink);text-align:left;vertical-align:top;font-size:15px}
-.tt th{width:7em;background:var(--ink);color:#fff;font-weight:700}
-.pending{display:inline-block;padding:0 8px;border:1px dashed var(--ink);font-size:13px;color:var(--mute)}
-.facts{padding-left:1.2em}
-.facts li{margin:.3em 0}
-/* voice */
-.vlist{display:grid;gap:16px}
-.vcard{margin:0;padding:16px;background:#fff;border:2px solid var(--ink);box-shadow:5px 5px 0 var(--yel)}
-.vcard blockquote{margin:10px 0 6px}
-.vcard figcaption{font-size:13px;color:var(--mute)}
-.voice-sample-tag{display:inline-block;padding:1px 10px;background:var(--blue);color:#fff;font-size:12px;font-weight:700;letter-spacing:.1em}
-.map{margin-top:28px;border:2px solid var(--ink);background:#fff}
-.map iframe{display:block;width:100%;height:360px;border:0}
-/* footer */
-.foot{background:var(--ink);color:#e4e9f1;padding:36px 0;border-top:6px solid var(--yel)}
-.foot a{color:var(--yel)}
-.footin{max-width:1080px;margin:0 auto;padding:0 16px}
-.fn{font:800 28px "Barlow Condensed",sans-serif;letter-spacing:.08em;color:#fff}
-.credits{font-size:12px;color:#b9c3d3;margin-top:18px}
-.credits ul{padding-left:1.2em}
-.credits li{margin:.3em 0;word-break:break-word}
-.design{font-size:12px;color:#b9c3d3}
-.hp-photo-note{position:fixed;left:0;right:0;bottom:0;z-index:900;background:rgba(20,27,38,.92);color:#fff;font-size:12px;text-align:center;padding:6px 12px;line-height:1.5}
-@media(max-width:820px){
-.cover .in{grid-template-columns:1fr;padding-right:56px}
-.vt{right:12px}
-.covimg{grid-column:auto;margin-right:-44px}
-.parts{grid-template-columns:repeat(2,1fr)}
-.three{grid-template-columns:1fr}
-.two,.two.rev{grid-template-columns:1fr}
-.steps{grid-template-columns:repeat(2,1fr)}
-.stephead .in{gap:14px}
-.top ul{gap:2px 10px}
-.map iframe{height:280px}
-}
+:root{--bg:#f9f2e7;--paper:#fefaf0;--ink:#3a2b25;--brown:#5a3d31;--berry:#c74f66;--pink:#f3d9d4;--matcha:#7d9a6a;--moss:#43604f;--line:#e3d2bb}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;scroll-padding-top:64px}
+body{background:var(--bg);color:var(--ink);font:400 16px/1.95 "Zen Maru Gothic","Hiragino Maru Gothic ProN",sans-serif;-webkit-text-size-adjust:100%}
+img{display:block;max-width:100%;height:auto}
+a{color:var(--berry)}
+.top{position:sticky;top:0;z-index:50;background:rgba(249,242,231,.94);backdrop-filter:blur(6px);border-bottom:1px solid var(--line);display:flex;align-items:center;justify-content:space-between;gap:12px;padding:10px 20px;flex-wrap:wrap}
+.logo{text-decoration:none;color:var(--brown);font:400 22px/1.2 "Klee One",serif;letter-spacing:.08em}
+.logo small{display:block;font:400 11px/1.2 "Zen Maru Gothic",sans-serif;letter-spacing:.12em;color:var(--moss)}
+.top ul{display:flex;gap:4px 18px;list-style:none;flex-wrap:wrap;padding-right:70px}
+.top ul a{text-decoration:none;color:var(--ink);font-size:14px;padding:4px 0;border-bottom:2px solid transparent}
+.top ul a:hover{border-color:var(--berry)}
+.hero{display:grid;grid-template-columns:1.05fr .95fr;gap:0;min-height:560px;background:var(--pink)}
+.hero .tx{padding:72px 6vw 56px;display:flex;flex-direction:column;justify-content:center}
+.k{font:400 13px/1.6 "Zen Maru Gothic",sans-serif;letter-spacing:.2em;color:var(--moss);margin-bottom:12px}
+h1{font:400 clamp(30px,4.6vw,50px)/1.5 "Klee One",serif;color:var(--brown);letter-spacing:.04em}
+.lead{margin-top:22px;max-width:30em}
+.hero .ph{position:relative;min-height:320px}
+.hero .ph img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.sec{padding:76px 20px}
+.in{max-width:1020px;margin:0 auto}
+h2{font:400 clamp(24px,3.4vw,34px)/1.5 "Klee One",serif;color:var(--brown);margin-bottom:22px;letter-spacing:.04em}
+h2::after{content:"";display:block;width:56px;height:4px;border-radius:2px;background:var(--matcha);margin-top:12px}
+.about{display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:center}
+.about p+p{margin-top:1em}
+.about .ph2{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.about .ph2 img{border-radius:14px;width:100%;height:100%;object-fit:cover;aspect-ratio:3/4}
+.src{font-size:13px;color:var(--brown);margin-top:18px;line-height:1.8}
+.note{font-size:13px;margin-top:14px;opacity:.85}
+.band{background:var(--paper);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.deep{background:var(--moss);color:var(--paper)}
+.deep h2{color:var(--paper)}
+.deep h2::after{background:var(--pink)}
+.deep a{color:var(--pink)}
+.menu{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;margin-top:8px}
+.card{background:var(--paper);color:var(--ink);border-radius:18px;overflow:hidden;box-shadow:0 6px 18px rgba(58,43,37,.12)}
+.card img{width:100%;aspect-ratio:4/3;object-fit:cover}
+.card div{padding:16px 18px 20px}
+.card h3{font:400 19px/1.5 "Klee One",serif;color:var(--brown)}
+.card p{font-size:14px;line-height:1.8;margin-top:4px}
+.tag{display:inline-block;font-size:12px;background:var(--pink);color:var(--brown);border-radius:99px;padding:1px 12px;margin-top:8px}
+.pending{display:inline-block;background:var(--pink);color:var(--brown);border-radius:4px;padding:0 10px;font-size:13px}
+.strip{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-top:30px}
+.strip img{width:100%;aspect-ratio:1/1;object-fit:cover;border-radius:10px}
+.voices{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.v{background:var(--paper);border:1px solid var(--line);border-radius:18px;padding:22px 22px 20px;position:relative}
+.v .badge{position:absolute;top:-12px;left:18px;background:var(--berry);color:#fff;font-size:12px;padding:1px 12px;border-radius:99px}
+.v p{font-size:15px}
+.v .who{font-size:13px;margin-top:10px;color:var(--moss)}
+.acc{display:grid;grid-template-columns:.9fr 1.1fr;gap:34px;align-items:start}
+.tt{width:100%;border-collapse:collapse}
+.tt th,.tt td{text-align:left;padding:11px 8px;border-bottom:1px solid rgba(255,250,241,.28);vertical-align:top;font-size:15px}
+.tt th{width:7em;font-weight:400;opacity:.85}
+.map iframe{width:100%;height:340px;border:0;border-radius:16px;background:var(--line)}
+.btn{display:inline-block;margin-top:16px;background:var(--pink);color:var(--brown)!important;text-decoration:none;padding:9px 24px;border-radius:99px}
+.foot{background:var(--ink);color:var(--bg);padding:48px 20px 90px;font-size:13px;line-height:1.9}
+.foot a{color:var(--pink)}
+.foot .fn{font:400 22px "Klee One",serif;margin-bottom:8px}
+.credits{margin-top:22px;padding-top:18px;border-top:1px solid rgba(249,242,231,.25)}
+.credits ul{padding-left:1.2em;margin:8px 0}
+.credits li{margin-bottom:4px}
+.hp-photo-note{position:fixed;left:0;right:0;bottom:0;z-index:900;background:rgba(58,43,37,.92);color:var(--bg);font-size:12px;line-height:1.5;padding:8px 14px;text-align:center}
+@media(max-width:820px){.hero,.about,.acc{grid-template-columns:1fr}.hero .ph{min-height:260px;order:-1}.hero .tx{padding:40px 22px}.menu,.voices{grid-template-columns:1fr}.strip{grid-template-columns:repeat(2,1fr)}.sec{padding:54px 20px}.top ul{padding-right:0}.top{padding:8px 14px}.v{margin-top:8px}}
