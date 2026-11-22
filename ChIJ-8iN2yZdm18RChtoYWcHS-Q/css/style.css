@@ -94,3 +94,9 @@ a{color:var(--plum)}
 .design{font-size:12px;color:#a198b8}
 .hp-photo-note{position:fixed;left:0;right:0;bottom:0;z-index:900;background:rgba(28,21,41,.92);color:#fff;font-size:12px;line-height:1.5;text-align:center;padding:8px 12px}
 @media(max-width:520px){.vcard{padding:70px 16px 14px}.vcard .coin{left:16px;top:16px}.top{padding:12px 14px}.map iframe{height:300px}.pagehead .coin{width:64px;height:64px}.pagehead .coin b{font-size:32px}}
+
+/* added: photo bands */
+.pband .in{padding-top:0}
+.four{display:grid;gap:18px;grid-template-columns:minmax(0,1fr);margin-top:20px}
+@media(min-width:560px){.four{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(min-width:900px){.four{grid-template-columns:repeat(4,minmax(0,1fr))}.four .ph:nth-child(even){margin-top:28px}}
