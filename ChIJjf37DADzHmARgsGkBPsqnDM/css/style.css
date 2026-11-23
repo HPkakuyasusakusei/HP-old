@@ -1,84 +1,48 @@
-:root{--bg:#f6f2e9;--ink:#2a1c38;--tom:#e8553d;--teal:#1f9e9a;--mus:#f2b632;--line:#d9d1c0}
+:root{--bg:#f2ecde;--paper:#f6f4e9;--ink:#2e2a4f;--crust:#9c5a2b;--wheat:#d6a03f;--sky:#46708c;--line:#d6ccb3;--mid:#e9ddbf}
 *{box-sizing:border-box}
 html{scroll-behavior:smooth}
-body{margin:0;background:var(--bg);color:var(--ink);font:400 16px/1.9 "Zen Kaku Gothic New",sans-serif;overflow-x:hidden}
-a{color:var(--teal)}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 16px/1.95 "Zen Maru Gothic","Hiragino Maru Gothic ProN",sans-serif;overflow-x:hidden}
+a{color:var(--sky)}
 img{max-width:100%;display:block}
-.top{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:10px 24px;padding:14px 5vw;border-bottom:3px solid var(--ink)}
-.logo{font:400 22px/1 "Mochiy Pop One",sans-serif;color:var(--ink);text-decoration:none;display:flex;align-items:center;gap:4px}
-.logo i{width:14px;height:14px;border-radius:50%;display:inline-block}
-.logo .b1{background:var(--tom);transform:translateY(-6px)}.logo .b2{background:var(--mus);transform:translateY(2px)}.logo .b3{background:var(--teal);transform:translateY(-6px);margin-right:8px}
-.top ul{display:flex;flex-wrap:wrap;gap:4px 18px;list-style:none;margin:0;padding:0}
-.top nav a{display:flex;flex-direction:column;align-items:center;text-decoration:none;color:var(--ink);font-size:13px;line-height:1.4}
-.top nav b{font-weight:700}
-.dots{font-size:7px;letter-spacing:1px;color:var(--line)}
-.top nav a:hover .dots,.top nav a[aria-current] .dots{color:var(--tom)}
-.top nav a[aria-current] b{border-bottom:2px solid var(--tom)}
-.hero{position:relative;display:grid;grid-template-columns:1fr;padding:40px 5vw 60px;min-height:70vh}
-.vert{position:absolute;right:3vw;top:10px;writing-mode:vertical-rl;font:400 clamp(90px,22vw,260px)/1 "Mochiy Pop One",sans-serif;color:var(--mus);opacity:.35;pointer-events:none;letter-spacing:.02em}
-.heroin{position:relative;max-width:560px}
-.k{font-size:13px;letter-spacing:.14em;color:var(--tom);font-weight:700;margin:0 0 6px}
-h1{font:400 clamp(30px,6vw,52px)/1.2 "Mochiy Pop One",sans-serif;margin:0 0 16px}
-h1 .big{font-size:clamp(52px,12vw,110px);color:var(--tom);display:inline-block;transform:rotate(-3deg)}
-h2{font:400 clamp(22px,3.4vw,32px)/1.4 "Mochiy Pop One",sans-serif;margin:0 0 14px}
-.lead{font-size:17px}
-.btns{display:flex;flex-wrap:wrap;gap:12px;margin-top:22px}
-.btn{display:inline-block;padding:10px 26px;border-radius:999px;background:var(--ink);color:#fff;text-decoration:none;font-weight:700;border:2px solid var(--ink)}
-.btn.ghost{background:transparent;color:var(--ink)}
-.throw{position:relative;display:flex;justify-content:space-between;align-items:flex-start;gap:2vw;margin-top:48px;color:var(--ink)}
-.throw .arc{position:absolute;left:0;right:0;top:0;width:100%;height:120px;z-index:0}
-.throw .ball{position:relative;z-index:1;width:30%}
-.throw .b1{margin-top:60px}.throw .b2{margin-top:0}.throw .b3{margin-top:60px}
-.ball{margin:0;text-align:center}
-.ball img{width:100%;aspect-ratio:1;object-fit:cover;border-radius:50%;border:5px solid var(--ink);box-shadow:8px 8px 0 var(--mus)}
-.b2 img{box-shadow:8px 8px 0 var(--tom)}.b3 img{box-shadow:8px 8px 0 var(--teal)}
-.ball figcaption{font-size:12px;margin-top:10px;color:#5b4d6a}
-.band{padding:56px 5vw}
-.band.light{background:#fff;border-top:3px solid var(--ink);border-bottom:3px solid var(--ink)}
-.band.assoc{background:var(--ink);color:#f6f2e9}
-.band.assoc .k{color:var(--mus)}
-.in{max-width:960px;margin:0 auto}
-.note,.imagine{font-size:14px;color:#5b4d6a}
-.imagine{border-left:5px solid var(--tom);padding:4px 0 4px 14px}
-.cascade{display:flex;flex-wrap:wrap;gap:24px 3%;margin-top:28px}
-.cascade .ball{width:22%}
-.cascade .c1,.cascade .c3{margin-top:40px}
-.cascade .c2{margin-top:0}.cascade .c4{margin-top:56px}
-.cascade .c2 img{box-shadow:8px 8px 0 var(--teal)}.cascade .c3 img{box-shadow:8px 8px 0 var(--tom)}.cascade .c4 img{box-shadow:8px 8px 0 var(--mus)}
-.two{display:grid;grid-template-columns:1.2fr 1fr;gap:36px;align-items:start}
-.two.rev{grid-template-columns:1.3fr 1fr}
-.duo{display:grid;gap:24px}
-.big{margin:0}
-.duo .ball{max-width:340px}
-.pagehead{padding:48px 5vw 8px;background:linear-gradient(90deg,var(--mus) 0 12px,transparent 12px)}
-.pagehead h1{font-size:clamp(36px,8vw,72px);color:var(--tom)}
-.tt{border-collapse:collapse;width:100%;max-width:620px}
-.tt th,.tt td{text-align:left;padding:10px 8px;border-bottom:2px dotted var(--line);vertical-align:top}
-.tt th{width:7em;font-weight:700;white-space:nowrap}
-.pending{display:inline-block;padding:0 12px;border:2px solid var(--tom);border-radius:999px;color:var(--tom);font-size:13px;font-weight:700}
-.facts{padding-left:1.2em}
-.vlist{display:grid;gap:22px}
-.vcard{margin:0;padding:20px 22px;background:#fff;border:3px solid var(--ink);border-radius:28px 28px 28px 4px;position:relative}
-.vcard:nth-child(2){margin-left:6vw;border-radius:28px 28px 4px 28px}
-.vcard blockquote{margin:10px 0 6px}
-.vcard figcaption{font-size:13px;color:#5b4d6a}
-.voice-sample-tag{display:inline-block;background:var(--mus);color:var(--ink);font-size:12px;font-weight:700;padding:0 12px;border-radius:999px}
-.map iframe{width:100%;height:340px;border:3px solid var(--ink);border-radius:20px;margin-top:28px}
-.foot{background:var(--ink);color:#e9e2f0;padding:48px 5vw 90px;margin-top:40px}
-.footin{max-width:960px;margin:0 auto;font-size:14px}
-.foot a{color:var(--mus)}
-.fn{font:400 26px/1.2 "Mochiy Pop One",sans-serif;margin-bottom:8px}
-.credits{margin-top:26px;font-size:12px;line-height:1.7;opacity:.9}
+.top{position:sticky;top:0;z-index:50;display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:8px 24px;padding:12px 5vw;background:var(--paper);border-bottom:1px solid var(--line)}
+.logo{font:700 20px/1 "Zen Old Mincho",serif;color:var(--ink);text-decoration:none;letter-spacing:.08em}
+.top ul{display:flex;flex-wrap:wrap;gap:4px 20px;list-style:none;margin:0;padding:0}
+.top nav a{color:var(--ink);text-decoration:none;font-size:14px}
+.top nav a:hover{color:var(--crust);border-bottom:2px solid var(--wheat)}
+.hero{position:relative;padding:56px 5vw 40px;max-width:1100px;margin:0 auto}
+.hero .k{margin:0;color:var(--crust);letter-spacing:.2em;font-size:13px}
+.hero h1{font:700 clamp(44px,10vw,92px)/1.15 "Zen Old Mincho",serif;margin:.2em 0 .3em;letter-spacing:.06em}
+.hero .lead{max-width:34em;font-size:18px}
+.hero .main{margin-top:28px;border-radius:200px 200px 8px 8px;overflow:hidden;aspect-ratio:16/9;background:var(--mid)}
+.hero .main img{width:100%;height:100%;object-fit:cover}
+.btns{display:flex;flex-wrap:wrap;gap:12px;margin-top:20px}
+.btn{display:inline-block;padding:10px 24px;background:var(--ink);color:var(--paper);text-decoration:none;border-radius:40px;font-size:15px}
+.btn.ghost{background:transparent;color:var(--ink);border:1.5px solid var(--ink)}
+.band{padding:64px 5vw}
+.band.alt{background:var(--paper);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.in{max-width:1000px;margin:0 auto}
+.in .k{margin:0;color:var(--crust);letter-spacing:.2em;font-size:13px}
+h2{font:700 clamp(24px,4vw,34px)/1.5 "Zen Old Mincho",serif;margin:.2em 0 .8em}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:16px;margin:24px 0}
+.grid figure{margin:0}
+.grid img{width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:6px}
+.grid figcaption{font-size:12px;margin-top:4px;color:var(--sky)}
+.menu{list-style:none;padding:0;margin:0;display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:12px}
+.menu li{background:var(--paper);border:1px solid var(--line);border-left:5px solid var(--wheat);padding:12px 16px;border-radius:4px}
+.menu b{display:block;font-family:"Zen Old Mincho",serif}
+.pending{display:inline-block;background:var(--mid);padding:0 10px;border-radius:20px;font-size:13px}
+.voices{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:16px}
+.voice{background:var(--bg);border:1px dashed var(--crust);border-radius:8px;padding:16px 18px;margin:0}
+.voice .badge{display:inline-block;background:var(--crust);color:#fff;font-size:12px;padding:0 10px;border-radius:20px}
+.tt{border-collapse:collapse;width:100%;margin:16px 0}
+.tt th,.tt td{text-align:left;padding:10px 12px;border-bottom:1px solid var(--line);vertical-align:top}
+.tt th{width:7em;color:var(--crust)}
+.map iframe{width:100%;height:340px;border:0;border-radius:8px}
+.note{font-size:13px;color:var(--sky)}
+.foot{background:var(--ink);color:var(--paper);padding:40px 5vw}
+.footin{max-width:1000px;margin:0 auto;font-size:14px}
+.foot a{color:var(--wheat)}
+.fn{font:700 22px "Zen Old Mincho",serif}
+.credits{font-size:12px;line-height:1.7}
 .credits ul{padding-left:1.2em}
-.design{font-size:12px;margin-top:18px}
-.hp-photo-note{position:fixed;left:0;right:0;bottom:0;z-index:900;background:rgba(42,28,56,.92);color:#fff;font-size:12px;line-height:1.5;padding:6px 12px;text-align:center}
-@media(max-width:760px){
-.two,.two.rev{grid-template-columns:1fr}
-.cascade .ball{width:46%}
-.cascade .c1,.cascade .c3{margin-top:0}.cascade .c2,.cascade .c4{margin-top:30px}
-.throw{gap:1vw}.throw .ball img{border-width:3px;box-shadow:4px 4px 0 var(--mus)}
-.throw .arc{height:90px}
-.vcard:nth-child(2){margin-left:0}
-.top{padding-right:80px}
-.tt th{white-space:normal;width:5.5em}
-}
+.hp-photo-note{margin:0;padding:10px 5vw;background:var(--mid);color:var(--ink);font-size:12px;text-align:center}
