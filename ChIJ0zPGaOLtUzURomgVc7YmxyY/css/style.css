@@ -1,0 +1,46 @@
+:root{--bg:#faf2e2;--band:#ede2c8;--ink:#2a3f3d;--sea:#3f6a6e;--crust:#9a6a1f;--acc:#a3411f;--pale:#d3e2dc;--lemon:#ddb93a}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 16px/1.95 "Zen Maru Gothic",sans-serif}
+a{color:var(--sea)}
+img{max-width:100%;display:block}
+h1,h2,h3{font-family:"Shippori Mincho",serif;font-weight:700;line-height:1.5;margin:0}
+.top{position:sticky;top:0;z-index:20;background:var(--bg);border-bottom:3px double var(--crust);display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:6px 18px;padding:10px 16px}
+.logo{font:700 1.15rem "Shippori Mincho",serif;color:var(--ink);text-decoration:none;letter-spacing:.04em}
+.top ul{list-style:none;margin:0;padding:0;display:flex;gap:4px 16px;flex-wrap:wrap}
+.top li a{color:var(--sea);text-decoration:none;font-weight:700;font-size:.92rem;padding:2px 0;border-bottom:2px solid transparent}
+.top li a:hover{border-bottom-color:var(--lemon)}
+.wrap{max-width:980px;margin:0 auto;padding:0 16px}
+section{padding:56px 0 24px;scroll-margin-top:64px}
+.hero{padding:40px 0 20px;text-align:center}
+.hero .kick{font-size:.85rem;letter-spacing:.3em;color:var(--crust);margin:0 0 6px}
+.hero h1{font-size:clamp(2rem,7vw,3.6rem);letter-spacing:.04em}
+.hero h1 em{font-style:normal;color:var(--acc)}
+.lead{max-width:640px;margin:14px auto 0;font-size:1.05rem}
+.hero-img{margin:28px auto 0;max-width:760px}
+.hero-img img{width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:6px;border:6px solid var(--bg);box-shadow:0 0 0 2px var(--crust)}
+h2{font-size:1.7rem;color:var(--ink);margin-bottom:18px;display:inline-block;border-bottom:4px solid var(--lemon);padding-bottom:2px}
+.band{background:var(--band);margin-top:40px}
+.cols{display:grid;gap:24px;grid-template-columns:1fr}
+@media(min-width:760px){.cols{grid-template-columns:1fr 1fr;align-items:start}}
+.grid{display:grid;gap:14px;grid-template-columns:repeat(2,1fr)}
+@media(min-width:760px){.grid{grid-template-columns:repeat(3,1fr)}}
+figure{margin:0}
+figure img{width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:4px}
+figcaption{font-size:.78rem;color:var(--sea);margin-top:4px}
+.facts{background:var(--pale);border-left:5px solid var(--sea);padding:14px 18px;border-radius:4px;margin:16px 0}
+.facts p{margin:4px 0}
+.menu{list-style:none;padding:0;margin:0;display:grid;gap:10px}
+.menu li{background:var(--bg);border:1px dashed var(--crust);padding:10px 14px;border-radius:4px}
+.menu b{font-family:"Shippori Mincho",serif;color:var(--acc)}
+.badge{display:inline-block;background:var(--acc);color:var(--bg);font-size:.75rem;font-weight:700;padding:1px 10px;border-radius:99px;margin-bottom:6px}
+.voice{background:var(--bg);border:2px solid var(--crust);border-radius:8px;padding:16px 18px;margin:0 0 16px}
+.voice p{margin:0}
+.map iframe{width:100%;height:340px;border:0;border-radius:6px}
+.btn{display:inline-block;background:var(--sea);color:var(--bg);padding:8px 20px;border-radius:99px;text-decoration:none;font-weight:700}
+.foot{margin-top:56px;background:var(--ink);color:var(--bg);padding:32px 16px 90px;font-size:.88rem}
+.foot a{color:var(--lemon)}
+.foot ul{padding-left:1.2em;margin:8px 0}
+.foot li{margin:3px 0}
+.foot .wrap p{margin:6px 0}
+.hp-photo-note{position:fixed;left:0;right:0;bottom:0;background:var(--band);color:var(--ink);border-top:2px solid var(--crust);font-size:.78rem;padding:6px 12px;z-index:30;text-align:center}
