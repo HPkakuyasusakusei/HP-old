@@ -1,0 +1,46 @@
+*{box-sizing:border-box}
+:root{--bg:#f3eadc;--paper:#fef7ef;--ink:#3a2c2f;--ume:#a5465c;--leaf:#6e8b62;--tan:#d9bf98;--soft:#ebe0cf}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 16px/1.95 "Zen Maru Gothic",sans-serif;overflow-x:hidden;padding-bottom:64px}
+a{color:var(--ume)}img{max-width:100%;height:auto;display:block}
+.top{position:sticky;top:0;z-index:50;display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:6px 20px;padding:12px 20px;background:var(--paper);border-bottom:3px solid var(--tan)}
+.logo{font:400 26px "Kiwi Maru",serif;color:var(--ume);text-decoration:none}
+.top ul{list-style:none;display:flex;flex-wrap:wrap;gap:4px 18px;margin:0;padding:0}
+.top ul a{color:var(--ink);text-decoration:none;font-weight:700;font-size:14px}
+.in{max-width:980px;margin:0 auto;padding:0 20px}
+section{padding:60px 0}
+h1,h2,h3{font-family:"Kiwi Maru",serif;font-weight:500;margin:0 0 .6em;line-height:1.5}
+h2{font-size:28px;color:var(--ume)}
+h2::after{content:"";display:block;width:56px;height:4px;background:var(--leaf);margin-top:10px;border-radius:2px}
+.k{font-size:13px;letter-spacing:.2em;color:var(--leaf);font-weight:700;margin:0 0 6px}
+.hero{padding:0;background:var(--soft)}
+.hero .in{display:grid;grid-template-columns:1.1fr 1fr;gap:28px;align-items:center;padding-top:44px;padding-bottom:44px}
+.hero h1{font-size:64px;color:var(--ume);margin:0}
+.hero .lead{font-size:18px;font-weight:700}
+.btns{display:flex;flex-wrap:wrap;gap:10px;margin-top:18px}
+.btn{display:inline-block;padding:10px 22px;border-radius:999px;background:var(--ume);color:#fff;text-decoration:none;font-weight:700}
+.btn.ghost{background:transparent;color:var(--ink);border:2px solid var(--tan)}
+figure{margin:0}
+figure img{width:100%;border-radius:14px;object-fit:cover;aspect-ratio:4/3;border:6px solid var(--paper);box-shadow:0 4px 14px rgba(58,44,47,.15)}
+figcaption{font-size:12px;line-height:1.6;color:#6b5a58;margin-top:6px}
+.cr{display:block}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:28px;align-items:start}
+.card{background:var(--paper);border-radius:16px;padding:22px;border:2px dashed var(--tan)}
+.menu{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:20px}
+.menu .card h3{font-size:19px;color:var(--ume)}
+.badge{display:inline-block;font-size:12px;font-weight:700;background:var(--leaf);color:#fff;border-radius:999px;padding:1px 12px;margin-bottom:8px}
+.pending{color:#7a6a60;font-weight:700}
+.gal{display:grid;grid-template-columns:repeat(auto-fill,minmax(210px,1fr));gap:18px}
+.voices{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:20px}
+.voices p{margin:0}
+.tt{border-collapse:collapse;width:100%;background:var(--paper)}
+.tt th,.tt td{text-align:left;padding:10px 14px;border-bottom:1px solid var(--soft);vertical-align:top}
+.tt th{width:7em;color:var(--leaf)}
+.map{width:100%;height:340px;border:0;border-radius:14px;margin-top:18px}
+.alt{background:var(--soft)}
+.foot{background:var(--ink);color:#f3eadc;padding:36px 0}
+.foot a{color:var(--tan)}
+.foot .fn{font:400 24px "Kiwi Maru",serif;margin-bottom:8px}
+.design{font-size:12px;opacity:.8}
+.hp-photo-note{position:fixed;left:0;right:0;bottom:0;z-index:900;background:var(--paper);color:var(--ink);font-size:12px;line-height:1.5;text-align:center;padding:8px 12px;border-top:2px solid var(--tan)}
+@media(max-width:720px){.hero .in,.two{grid-template-columns:1fr}.hero h1{font-size:48px}h2{font-size:24px}}
