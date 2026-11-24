@@ -198,3 +198,8 @@ section{padding:56px 0}
   .voice{padding:42px 18px 22px}
   .voice.right,.voice.left{width:100%}
 }
+
+/* hp-mobile-img */
+@media (max-width:600px){
+  img:not([class*="icon"]):not([class*="logo"]):not([class*="ig"]){max-width:300px;height:auto;margin-left:auto;margin-right:auto}
+}

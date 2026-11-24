@@ -137,3 +137,8 @@ address{font-style:normal}
 .phone-bar{display:block;background:var(--coral);color:#fff;text-align:center;font-weight:700;text-decoration:none;padding:.7em 1em}
 .hp-photo-note{margin:0;background:rgba(36,54,63,.94);color:#fff;font-size:.7rem;line-height:1.5;padding:6px 12px;text-align:center}
 @media(min-width:800px){.phone-bar{display:none}body{padding-bottom:64px}.hp-photo-note{font-size:.78rem}}
+
+/* hp-mobile-img */
+@media (max-width:600px){
+  img:not([class*="icon"]):not([class*="logo"]):not([class*="ig"]){max-width:300px;height:auto;margin-left:auto;margin-right:auto}
+}

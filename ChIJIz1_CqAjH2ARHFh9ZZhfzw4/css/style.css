@@ -96,3 +96,8 @@ h1,h2,h3,.serif{font-family:"Shippori Mincho","Yu Mincho",serif;font-weight:600;
 .header-inner{padding:8px 16px}
 .info div{grid-template-columns:1fr;gap:0}
 }
+
+/* hp-mobile-img */
+@media (max-width:600px){
+  img:not([class*="icon"]):not([class*="logo"]):not([class*="ig"]){max-width:300px;height:auto;margin-left:auto;margin-right:auto}
+}

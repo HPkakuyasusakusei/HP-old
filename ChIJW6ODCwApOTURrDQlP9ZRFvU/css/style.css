@@ -182,3 +182,8 @@ footer .cc-links{list-style:none;padding:0}
   .hp-tel-bar .ig{width:56px;height:100%;display:flex;align-items:center;justify-content:center;color:#fff;border-left:1px solid rgba(255,255,255,.5)}
   .hp-tel-bar .ig svg{width:20px;height:20px}
 }
+
+/* hp-mobile-img */
+@media (max-width:600px){
+  img:not([class*="icon"]):not([class*="logo"]):not([class*="ig"]){max-width:300px;height:auto;margin-left:auto;margin-right:auto}
+}

@@ -208,3 +208,8 @@ ul,ol,dl{margin:0;padding:0}
   .guide .ttl{font-size:19px}
   .band .arch{aspect-ratio:16/9}
 }
+
+/* hp-mobile-img */
+@media (max-width:600px){
+  img:not([class*="icon"]):not([class*="logo"]):not([class*="ig"]){max-width:300px;height:auto;margin-left:auto;margin-right:auto}
+}

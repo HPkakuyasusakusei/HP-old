@@ -227,3 +227,8 @@ figcaption,.cap{font-size:13px;color:var(--slate);margin-top:4px;line-height:1.5
   .ledger-table td{padding-top:0}
   .end-band{min-height:300px;padding:28px 14px}
 }
+
+/* hp-mobile-img */
+@media (max-width:600px){
+  img:not([class*="icon"]):not([class*="logo"]):not([class*="ig"]){max-width:300px;height:auto;margin-left:auto;margin-right:auto}
+}

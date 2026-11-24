@@ -169,3 +169,8 @@ p{margin:0 0 1em}
   .phone-bar{display:block;position:fixed;left:0;right:0;bottom:0;background:var(--lilac-deep);color:#fff;text-align:center;padding:.95rem 1rem;text-decoration:none;font-size:1.05rem;letter-spacing:.05em;z-index:50;border-top:1px solid #fff}
   .phone-bar:hover{color:#fff;background:var(--ink)}
 }
+
+/* hp-mobile-img */
+@media (max-width:600px){
+  img:not([class*="icon"]):not([class*="logo"]):not([class*="ig"]){max-width:300px;height:auto;margin-left:auto;margin-right:auto}
+}

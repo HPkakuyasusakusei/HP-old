@@ -218,3 +218,8 @@ section{padding:56px 0}
 }
 
 @media (min-width:769px) and (max-width:1280px){.site-header .wrap{padding-right:96px}}
+
+/* hp-mobile-img */
+@media (max-width:600px){
+  img:not([class*="icon"]):not([class*="logo"]):not([class*="ig"]){max-width:300px;height:auto;margin-left:auto;margin-right:auto}
+}

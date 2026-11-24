@@ -206,3 +206,8 @@ p{margin:0 0 1em}
 /* bottom tel bar */
 .telbar{position:fixed;left:0;right:0;bottom:0;z-index:90;background:var(--lime);color:var(--ink);height:calc(56px + env(safe-area-inset-bottom));padding-bottom:env(safe-area-inset-bottom);display:flex;align-items:center;justify-content:center;gap:10px;text-decoration:none;font-weight:700;border-top:2px solid var(--ink)}
 @media(min-width:900px){.telbar{display:none}}
+
+/* hp-mobile-img */
+@media (max-width:600px){
+  img:not([class*="icon"]):not([class*="logo"]):not([class*="ig"]){max-width:300px;height:auto;margin-left:auto;margin-right:auto}
+}

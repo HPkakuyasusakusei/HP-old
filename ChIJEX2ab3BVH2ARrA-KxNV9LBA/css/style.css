@@ -83,3 +83,8 @@ body{padding-bottom:56px}
 .callbar a:first-child{background:var(--gold);color:#3b2a00}
 .tbl th{width:38%}
 }
+
+/* hp-mobile-img */
+@media (max-width:600px){
+  img:not([class*="icon"]):not([class*="logo"]):not([class*="ig"]){max-width:300px;height:auto;margin-left:auto;margin-right:auto}
+}

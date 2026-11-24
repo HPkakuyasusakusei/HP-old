@@ -44,3 +44,8 @@ dl.info dd{margin:0}
 footer{background:var(--nutd);color:#E6D8BC;padding:32px 0;font-size:14px}
 footer a{color:#fff}
 @media(max-width:720px){.hero .wrap,.two{grid-template-columns:1fr}.hero h1{font-size:32px}.photos{grid-template-columns:repeat(2,1fr)}nav a{margin-left:0;margin-right:12px}header.top .wrap{gap:6px}dl.info{grid-template-columns:6em 1fr}}
+
+/* hp-mobile-img */
+@media (max-width:600px){
+  img:not([class*="icon"]):not([class*="logo"]):not([class*="ig"]){max-width:300px;height:auto;margin-left:auto;margin-right:auto}
+}

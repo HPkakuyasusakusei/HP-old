@@ -316,3 +316,8 @@ ul, ol { margin: 0; padding: 0; list-style: none; }
   .btn { width: 100%; }
   .ft-deco { right: 14px; }
 }
+
+/* hp-mobile-img */
+@media (max-width:600px){
+  img:not([class*="icon"]):not([class*="logo"]):not([class*="ig"]){max-width:300px;height:auto;margin-left:auto;margin-right:auto}
+}

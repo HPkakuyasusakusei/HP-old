@@ -150,3 +150,8 @@ main{display:block}
   .hero-block{margin-top:-60px;padding:22px 20px}
   .map{height:320px}
 }
+
+/* hp-mobile-img */
+@media (max-width:600px){
+  img:not([class*="icon"]):not([class*="logo"]):not([class*="ig"]){max-width:300px;height:auto;margin-left:auto;margin-right:auto}
+}

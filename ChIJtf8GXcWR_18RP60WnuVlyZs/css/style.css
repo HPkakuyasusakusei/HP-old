@@ -181,3 +181,8 @@ main{display:block}
   .access-info{display:grid;grid-template-columns:1fr 1fr;gap:40px;padding:24px max(24px,calc((100% - 1040px)/2)) 0;align-items:start}
   .access-info .dl-table{margin:0}
 }
+
+/* hp-mobile-img */
+@media (max-width:600px){
+  img:not([class*="icon"]):not([class*="logo"]):not([class*="ig"]){max-width:300px;height:auto;margin-left:auto;margin-right:auto}
+}

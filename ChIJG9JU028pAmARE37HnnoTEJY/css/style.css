@@ -329,3 +329,8 @@ main { display: block; }
   .site-footer { padding: 40px 32px; margin-top: 64px; }
   .hp-photo-note { margin: 40px 32px 0; }
 }
+
+/* hp-mobile-img */
+@media (max-width:600px){
+  img:not([class*="icon"]):not([class*="logo"]):not([class*="ig"]){max-width:300px;height:auto;margin-left:auto;margin-right:auto}
+}

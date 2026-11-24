@@ -182,3 +182,8 @@ a:focus-visible { outline: 3px solid var(--lemon); outline-offset: 2px; }
   .about-side { position: sticky; top: 16px; height: fit-content; }
   .map { height: 420px; }
 }
+
+/* hp-mobile-img */
+@media (max-width:600px){
+  img:not([class*="icon"]):not([class*="logo"]):not([class*="ig"]){max-width:300px;height:auto;margin-left:auto;margin-right:auto}
+}

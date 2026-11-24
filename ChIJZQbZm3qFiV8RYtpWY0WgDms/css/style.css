@@ -170,3 +170,8 @@ p{margin:0 0 1em}
   .map-box iframe{height:480px}
   .asym{margin-top:56px}
 }
+
+/* hp-mobile-img */
+@media (max-width:600px){
+  img:not([class*="icon"]):not([class*="logo"]):not([class*="ig"]){max-width:300px;height:auto;margin-left:auto;margin-right:auto}
+}

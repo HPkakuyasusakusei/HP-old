@@ -66,3 +66,8 @@ body{padding-bottom:56px}
 .ig span{display:none}
 .telbar{display:block;position:fixed;left:0;right:0;bottom:0;background:var(--saf);color:#2b1d00;text-align:center;font-weight:700;text-decoration:none;padding:.9rem;z-index:30}
 }
+
+/* hp-mobile-img */
+@media (max-width:600px){
+  img:not([class*="icon"]):not([class*="logo"]):not([class*="ig"]){max-width:300px;height:auto;margin-left:auto;margin-right:auto}
+}

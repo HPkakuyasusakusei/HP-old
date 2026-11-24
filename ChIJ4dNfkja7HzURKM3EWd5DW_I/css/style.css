@@ -286,3 +286,8 @@ dd { margin: 0; font-size: 17px; font-weight: 700; overflow-wrap: anywhere; }
   .hero-copy { position: absolute; right: 5%; bottom: 36px; width: 38%; padding: 0; }
   .hero-lead { font-size: clamp(22px, 2.2vw, 30px); }
 }
+
+/* hp-mobile-img */
+@media (max-width:600px){
+  img:not([class*="icon"]):not([class*="logo"]):not([class*="ig"]){max-width:300px;height:auto;margin-left:auto;margin-right:auto}
+}

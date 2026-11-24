@@ -219,3 +219,8 @@ figcaption { font-size: .78rem; color: var(--sub); line-height: 1.6; padding-top
   .btn-row { flex-direction: column; }
   .intro-photo { margin-right: -20px; }
 }
+
+/* hp-mobile-img */
+@media (max-width:600px){
+  img:not([class*="icon"]):not([class*="logo"]):not([class*="ig"]){max-width:300px;height:auto;margin-left:auto;margin-right:auto}
+}

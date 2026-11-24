@@ -92,3 +92,8 @@ p{margin:0 0 1em}
   .map-wrap iframe{height:420px}
   .big-tel{font-size:3rem}
 }
+
+/* hp-mobile-img */
+@media (max-width:600px){
+  img:not([class*="icon"]):not([class*="logo"]):not([class*="ig"]){max-width:300px;height:auto;margin-left:auto;margin-right:auto}
+}

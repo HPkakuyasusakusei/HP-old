@@ -219,3 +219,8 @@ section { padding: 56px 0; }
   }
   .call-bar .num { font-family: var(--en); font-weight: 600; letter-spacing: .08em; }
 }
+
+/* hp-mobile-img */
+@media (max-width:600px){
+  img:not([class*="icon"]):not([class*="logo"]):not([class*="ig"]){max-width:300px;height:auto;margin-left:auto;margin-right:auto}
+}

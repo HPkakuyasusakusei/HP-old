@@ -88,3 +88,8 @@ dl{grid-template-columns:7em 1fr}
 .topbar{padding:6px 14px}
 .callbar{display:block;position:fixed;left:0;right:0;bottom:0;background:var(--rust);color:#fff;text-align:center;padding:14px;text-decoration:none;font-weight:bold;z-index:50}
 }
+
+/* hp-mobile-img */
+@media (max-width:600px){
+  img:not([class*="icon"]):not([class*="logo"]):not([class*="ig"]){max-width:300px;height:auto;margin-left:auto;margin-right:auto}
+}

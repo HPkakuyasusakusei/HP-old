@@ -317,3 +317,8 @@ figcaption { font-size: 13px; color: var(--muted); padding-top: 6px; line-height
   .snap .s-l .ph { width: 280px; }
   .cta-band { padding: 28px 16px; }
 }
+
+/* hp-mobile-img */
+@media (max-width:600px){
+  img:not([class*="icon"]):not([class*="logo"]):not([class*="ig"]){max-width:300px;height:auto;margin-left:auto;margin-right:auto}
+}

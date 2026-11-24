@@ -143,3 +143,8 @@ body{padding-bottom:64px;font-size:17px}
 .page-head h1{font-size:34px}
 }
 @media (max-width:420px){.logo{font-size:16px}.top-strip{padding-right:112px}}
+
+/* hp-mobile-img */
+@media (max-width:600px){
+  img:not([class*="icon"]):not([class*="logo"]):not([class*="ig"]){max-width:300px;height:auto;margin-left:auto;margin-right:auto}
+}

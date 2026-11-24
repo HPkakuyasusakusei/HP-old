@@ -209,3 +209,8 @@ figcaption{font-size:12px;line-height:1.6;margin-top:6px;color:#4d4753}
 .credit-list{list-style:none;margin:10px 0 0;padding:0}
 .credit-list li{margin-bottom:5px}
 .cc{margin:0 0 6px}
+
+/* hp-mobile-img */
+@media (max-width:600px){
+  img:not([class*="icon"]):not([class*="logo"]):not([class*="ig"]){max-width:300px;height:auto;margin-left:auto;margin-right:auto}
+}

@@ -259,3 +259,8 @@ ul{padding:0;list-style:none}
   .phone-bar a{flex:1;text-align:center;text-decoration:none;color:var(--paper);font-weight:700;font-size:14px;line-height:40px;height:40px;border:1px solid var(--paper);border-radius:2px}
   .phone-bar a.p-tel{flex:1.6;background:var(--red);border-color:var(--red);color:#fff;font-size:16px}
 }
+
+/* hp-mobile-img */
+@media (max-width:600px){
+  img:not([class*="icon"]):not([class*="logo"]):not([class*="ig"]){max-width:300px;height:auto;margin-left:auto;margin-right:auto}
+}

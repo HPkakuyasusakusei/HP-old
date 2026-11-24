@@ -175,3 +175,8 @@ h2{font:800 clamp(24px,3.4vw,32px)/1.4 var(--f-head);color:var(--ink)}
   .callbar svg{width:22px;height:22px}
   .hp-sample-badge{bottom:72px;left:10px}
 }
+
+/* hp-mobile-img */
+@media (max-width:600px){
+  img:not([class*="icon"]):not([class*="logo"]):not([class*="ig"]){max-width:300px;height:auto;margin-left:auto;margin-right:auto}
+}

@@ -191,3 +191,8 @@ main{min-width:0}
   .hero-in{padding:0 80px 72px}
 }
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.idx i{transition:none}}
+
+/* hp-mobile-img */
+@media (max-width:600px){
+  img:not([class*="icon"]):not([class*="logo"]):not([class*="ig"]){max-width:300px;height:auto;margin-left:auto;margin-right:auto}
+}

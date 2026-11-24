@@ -258,3 +258,8 @@ figcaption { font-size: .75rem; color: var(--sub); padding-top: .35rem; line-hei
 @media (min-width: 820px) {
   .hp-sample-badge { padding: 0 1.2em; }
 }
+
+/* hp-mobile-img */
+@media (max-width:600px){
+  img:not([class*="icon"]):not([class*="logo"]):not([class*="ig"]){max-width:300px;height:auto;margin-left:auto;margin-right:auto}
+}

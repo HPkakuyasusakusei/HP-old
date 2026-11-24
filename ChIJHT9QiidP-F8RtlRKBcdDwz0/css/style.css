@@ -185,3 +185,8 @@ p{margin:0 0 1em}
 @media (min-width:1200px){
   .flow{padding-left:64px}
 }
+
+/* hp-mobile-img */
+@media (max-width:600px){
+  img:not([class*="icon"]):not([class*="logo"]):not([class*="ig"]){max-width:300px;height:auto;margin-left:auto;margin-right:auto}
+}

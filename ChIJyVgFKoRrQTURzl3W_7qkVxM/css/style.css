@@ -252,3 +252,8 @@ figure { margin: 0; }
   .top-strip .tel { font-size: 14px; }
   .hp-sample-badge { position: static; width: 100%; height: 24px; justify-content: center; font-size: 11px; padding: 0 8px; border-radius: 0; }
 }
+
+/* hp-mobile-img */
+@media (max-width:600px){
+  img:not([class*="icon"]):not([class*="logo"]):not([class*="ig"]){max-width:300px;height:auto;margin-left:auto;margin-right:auto}
+}

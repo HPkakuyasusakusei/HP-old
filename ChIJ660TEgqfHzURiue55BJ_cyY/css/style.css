@@ -234,3 +234,8 @@ body>.wave:last-of-type{margin-top:0}
   .tide::after{content:"";position:absolute;left:max(24px,calc(50% - 560px));top:90px;width:11px;height:11px;margin-left:-5px;border-radius:50%;background:var(--coral)}
   .tide>.wrap{padding-left:40px}
 }
+
+/* hp-mobile-img */
+@media (max-width:600px){
+  img:not([class*="icon"]):not([class*="logo"]):not([class*="ig"]){max-width:300px;height:auto;margin-left:auto;margin-right:auto}
+}

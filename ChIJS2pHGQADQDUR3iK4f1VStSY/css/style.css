@@ -58,3 +58,8 @@ main{max-width:1080px;margin:auto;padding:0 16px}
 .m1{min-height:240px}
 .callbar{display:block;position:fixed;left:0;right:0;bottom:0;background:var(--apri);color:var(--ink);text-align:center;font-weight:bold;padding:14px;text-decoration:none;z-index:50}
 }
+
+/* hp-mobile-img */
+@media (max-width:600px){
+  img:not([class*="icon"]):not([class*="logo"]):not([class*="ig"]){max-width:300px;height:auto;margin-left:auto;margin-right:auto}
+}

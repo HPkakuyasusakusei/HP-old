@@ -134,3 +134,8 @@ body{padding-bottom:0}
 .foot-grid{grid-template-columns:1fr 1.5fr}
 .vq{padding:36px 40px 30px}
 }
+
+/* hp-mobile-img */
+@media (max-width:600px){
+  img:not([class*="icon"]):not([class*="logo"]):not([class*="ig"]){max-width:300px;height:auto;margin-left:auto;margin-right:auto}
+}

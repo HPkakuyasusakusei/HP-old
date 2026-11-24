@@ -706,3 +706,16 @@ p { margin: 0 0 1em; }
 .ig-icon-float{position:fixed;top:12px;left:12px;z-index:650;display:flex;align-items:center;justify-content:center;width:40px;height:40px;border-radius:50%;background:linear-gradient(45deg,#f09433,#e6683c,#dc2743,#cc2366,#bc1888);box-shadow:0 2px 8px rgba(0,0,0,0.25);text-decoration:none;}
 .ig-icon-float svg{display:block;}
 @media (max-width:420px){.ig-icon-float{top:8px;left:8px;width:34px;height:34px;}}
+
+/* スマホ: 画像を小さめに */
+@media (max-width: 600px) {
+  .hero__photo { max-width: 240px; }
+  .about__photo img, .menu__main-photo img, .menu__sub-photo img, .menu__wafu-photo img { max-width: 300px; margin-left: auto; margin-right: auto; }
+  .menu__wafu-photo img { aspect-ratio: 4/3; }
+  .gallery__window img { max-width: 220px; margin-left: auto; margin-right: auto; }
+}
+
+/* hp-mobile-img */
+@media (max-width:600px){
+  img:not([class*="icon"]):not([class*="logo"]):not([class*="ig"]){max-width:300px;height:auto;margin-left:auto;margin-right:auto}
+}

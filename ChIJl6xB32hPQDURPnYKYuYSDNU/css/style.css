@@ -234,3 +234,8 @@ figcaption{font-size:11px;letter-spacing:.06em;opacity:.75;margin-top:6px}
 @media(min-width:900px){.foot-grid{grid-template-columns:1fr 1fr}}
 
 @media(prefers-reduced-motion:reduce){*{transition:none!important}}
+
+/* hp-mobile-img */
+@media (max-width:600px){
+  img:not([class*="icon"]):not([class*="logo"]):not([class*="ig"]){max-width:300px;height:auto;margin-left:auto;margin-right:auto}
+}

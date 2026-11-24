@@ -212,3 +212,8 @@ ul{margin:0;padding:0}
   .gnav a{padding:.45rem .42rem;font-size:.82rem}
   .cta-block{padding:1.3rem 1.1rem 1.5rem}
 }
+
+/* hp-mobile-img */
+@media (max-width:600px){
+  img:not([class*="icon"]):not([class*="logo"]):not([class*="ig"]){max-width:300px;height:auto;margin-left:auto;margin-right:auto}
+}

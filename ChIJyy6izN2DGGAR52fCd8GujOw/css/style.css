@@ -118,3 +118,8 @@ body{padding-bottom:72px}
 .gnav a{font-size:.85rem}
 .tel-bar{display:block;position:fixed;left:0;right:0;bottom:0;z-index:30;background:var(--honey);color:#1b1405;text-align:center;font-weight:700;text-decoration:none;padding:16px 10px;font-size:1.05rem;box-shadow:0 -2px 8px #0003}
 }
+
+/* hp-mobile-img */
+@media (max-width:600px){
+  img:not([class*="icon"]):not([class*="logo"]):not([class*="ig"]){max-width:300px;height:auto;margin-left:auto;margin-right:auto}
+}

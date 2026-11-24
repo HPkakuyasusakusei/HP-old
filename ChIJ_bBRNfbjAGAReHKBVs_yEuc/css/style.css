@@ -225,3 +225,8 @@ main{display:block}
   .path-band p{left:3rem;font-size:1.4rem}
   .path-note{padding-left:3rem}
 }
+
+/* hp-mobile-img */
+@media (max-width:600px){
+  img:not([class*="icon"]):not([class*="logo"]):not([class*="ig"]){max-width:300px;height:auto;margin-left:auto;margin-right:auto}
+}

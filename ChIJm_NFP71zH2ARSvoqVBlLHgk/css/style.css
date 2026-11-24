@@ -123,3 +123,8 @@ table.info th{background:var(--panel);width:8em;color:var(--main);white-space:no
   .strip .wide img{width:660px}
   .photos-2{grid-template-columns:1fr 1fr}
 }
+
+/* hp-mobile-img */
+@media (max-width:600px){
+  img:not([class*="icon"]):not([class*="logo"]):not([class*="ig"]){max-width:300px;height:auto;margin-left:auto;margin-right:auto}
+}

@@ -399,3 +399,8 @@ ul { margin: 0; padding: 0; list-style: none; }
   .site-header .inner { gap: 8px; }
   .logo { font-size: 18px; letter-spacing: .02em; }
 }
+
+/* hp-mobile-img */
+@media (max-width:600px){
+  img:not([class*="icon"]):not([class*="logo"]):not([class*="ig"]){max-width:300px;height:auto;margin-left:auto;margin-right:auto}
+}

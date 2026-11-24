@@ -142,3 +142,8 @@ img{max-width:100%;display:block;}
   .photo-strip{grid-template-columns:1fr;}
   .footer-grid{flex-direction:column;}
 }
+
+/* hp-mobile-img */
+@media (max-width:600px){
+  img:not([class*="icon"]):not([class*="logo"]):not([class*="ig"]){max-width:300px;height:auto;margin-left:auto;margin-right:auto}
+}

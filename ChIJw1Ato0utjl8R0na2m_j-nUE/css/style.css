@@ -169,3 +169,8 @@ figcaption{font-size:.8rem;color:var(--sub);padding-top:.3em}
   .ledger th{width:38%}
   .tel-bar{display:block;position:fixed;left:0;right:0;bottom:0;z-index:60;background:var(--accent);color:#fff;text-align:center;text-decoration:none;font-weight:500;padding:.95rem 1rem;font-variant-numeric:tabular-nums}
 }
+
+/* hp-mobile-img */
+@media (max-width:600px){
+  img:not([class*="icon"]):not([class*="logo"]):not([class*="ig"]){max-width:300px;height:auto;margin-left:auto;margin-right:auto}
+}

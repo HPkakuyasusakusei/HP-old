@@ -232,3 +232,8 @@ ul, ol, dl { margin: 0; padding: 0; }
   .page-head h1 { font-size: 2rem; }
   .band .wrap { padding: 52px 0; }
 }
+
+/* hp-mobile-img */
+@media (max-width:600px){
+  img:not([class*="icon"]):not([class*="logo"]):not([class*="ig"]){max-width:300px;height:auto;margin-left:auto;margin-right:auto}
+}

@@ -163,3 +163,8 @@ footer .credits li{list-style:none}
   .hp-photo-note,.photo-sub{padding-left:44px;padding-right:44px}
 }
 @media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+
+/* hp-mobile-img */
+@media (max-width:600px){
+  img:not([class*="icon"]):not([class*="logo"]):not([class*="ig"]){max-width:300px;height:auto;margin-left:auto;margin-right:auto}
+}

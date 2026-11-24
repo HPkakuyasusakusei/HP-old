@@ -88,3 +88,8 @@ h2{font-size:22px;margin-bottom:12px}
   .callbar .cb-ig{flex:0 0 34%;background:var(--ink)}
   .q3{margin-left:0}
 }
+
+/* hp-mobile-img */
+@media (max-width:600px){
+  img:not([class*="icon"]):not([class*="logo"]):not([class*="ig"]){max-width:300px;height:auto;margin-left:auto;margin-right:auto}
+}

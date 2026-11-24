@@ -214,3 +214,8 @@ figure.photo figcaption{font-size:.8rem;color:var(--teal);padding-top:6px;line-h
   .hp-photo-note{font-size:10.5px}
   .logo{font-size:.95rem}
 }
+
+/* hp-mobile-img */
+@media (max-width:600px){
+  img:not([class*="icon"]):not([class*="logo"]):not([class*="ig"]){max-width:300px;height:auto;margin-left:auto;margin-right:auto}
+}

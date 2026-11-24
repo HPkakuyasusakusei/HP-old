@@ -234,3 +234,8 @@ details p{margin:0;padding:0 22px 20px 66px}
   .cta .btns{align-items:stretch}
   .price th,.price td{padding:14px}
 }
+
+/* hp-mobile-img */
+@media (max-width:600px){
+  img:not([class*="icon"]):not([class*="logo"]):not([class*="ig"]){max-width:300px;height:auto;margin-left:auto;margin-right:auto}
+}

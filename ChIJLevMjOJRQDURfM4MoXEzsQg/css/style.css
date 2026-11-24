@@ -376,3 +376,8 @@ body.page-about .site-footer { border-top: 1px solid var(--caramel); }
 @media (min-width: 1280px) {
   .access-grid, .contact-sec, .menu-top { max-width: 1280px; }
 }
+
+/* hp-mobile-img */
+@media (max-width:600px){
+  img:not([class*="icon"]):not([class*="logo"]):not([class*="ig"]){max-width:300px;height:auto;margin-left:auto;margin-right:auto}
+}

@@ -130,3 +130,8 @@ footer p{margin:0 0 6px}
   .foot-credit{grid-column:1 / -1}
   .hp-photo-note{padding:12px 32px}
 }
+
+/* hp-mobile-img */
+@media (max-width:600px){
+  img:not([class*="icon"]):not([class*="logo"]):not([class*="ig"]){max-width:300px;height:auto;margin-left:auto;margin-right:auto}
+}

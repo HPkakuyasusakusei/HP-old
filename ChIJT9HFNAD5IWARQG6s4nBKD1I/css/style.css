@@ -213,3 +213,8 @@ section { padding: 56px 0 0; }
   body { padding-bottom: 0; }
   .page-head h1.tate { writing-mode: vertical-rl; }
 }
+
+/* hp-mobile-img */
+@media (max-width:600px){
+  img:not([class*="icon"]):not([class*="logo"]):not([class*="ig"]){max-width:300px;height:auto;margin-left:auto;margin-right:auto}
+}

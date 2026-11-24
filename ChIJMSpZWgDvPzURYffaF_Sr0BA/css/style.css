@@ -140,3 +140,8 @@ section{padding:48px 0}
   .callbar{display:flex;position:fixed;left:0;right:0;bottom:0;z-index:50;background:var(--ink-deep);border-top:1px solid var(--brass);padding:8px 12px}
   .callbar a{flex:1;display:flex;align-items:center;justify-content:center;min-height:52px;background:var(--brass);color:var(--on-brass);font-weight:700;text-decoration:none;font-size:1.05rem;white-space:nowrap}
 }
+
+/* hp-mobile-img */
+@media (max-width:600px){
+  img:not([class*="icon"]):not([class*="logo"]):not([class*="ig"]){max-width:300px;height:auto;margin-left:auto;margin-right:auto}
+}

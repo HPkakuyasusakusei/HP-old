@@ -213,3 +213,8 @@ ul,dl{margin:0;padding:0}
   .lk-logo{font-size:17px}
   .lk-strip{grid-template-columns:1fr 1fr}
 }
+
+/* hp-mobile-img */
+@media (max-width:600px){
+  img:not([class*="icon"]):not([class*="logo"]):not([class*="ig"]){max-width:300px;height:auto;margin-left:auto;margin-right:auto}
+}

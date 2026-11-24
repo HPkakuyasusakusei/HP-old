@@ -174,3 +174,8 @@ figcaption{font-size:.75rem;color:var(--brown);padding-top:4px}
   .fv-side{flex:1 1 0;min-width:0}
   .fv-side .btn{flex:1 1 100%;padding:12px 8px}
 }
+
+/* hp-mobile-img */
+@media (max-width:600px){
+  img:not([class*="icon"]):not([class*="logo"]):not([class*="ig"]){max-width:300px;height:auto;margin-left:auto;margin-right:auto}
+}

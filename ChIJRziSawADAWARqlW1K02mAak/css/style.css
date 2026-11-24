@@ -213,3 +213,8 @@ body{padding-bottom:0;font-size:17px}
 }
 @media (prefers-reduced-motion:reduce){.btn:hover{transform:none}.gallery-strip{scroll-behavior:auto}}
 @media (prefers-reduced-motion:no-preference){.btn{transition:transform .15s,box-shadow .15s}}
+
+/* hp-mobile-img */
+@media (max-width:600px){
+  img:not([class*="icon"]):not([class*="logo"]):not([class*="ig"]){max-width:300px;height:auto;margin-left:auto;margin-right:auto}
+}

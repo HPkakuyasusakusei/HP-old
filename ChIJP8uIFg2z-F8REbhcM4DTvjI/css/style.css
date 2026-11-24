@@ -83,3 +83,8 @@ dl{grid-template-columns:6.5em 1fr}
 .hp-sample-badge{bottom:66px}
 .phone-bar{display:block;position:fixed;left:0;right:0;bottom:0;z-index:40;background:var(--gold);color:#fff;text-align:center;text-decoration:none;font-weight:700;padding:16px;font-size:16px}
 }
+
+/* hp-mobile-img */
+@media (max-width:600px){
+  img:not([class*="icon"]):not([class*="logo"]):not([class*="ig"]){max-width:300px;height:auto;margin-left:auto;margin-right:auto}
+}

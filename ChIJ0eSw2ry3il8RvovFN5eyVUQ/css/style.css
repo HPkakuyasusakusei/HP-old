@@ -124,3 +124,7 @@ p{margin:0 0 1em}
   .sec{display:grid;grid-template-columns:11em 1fr;gap:30px}
   .voice-photo img{height:360px}
 }
+/* hp-mobile-img */
+@media (max-width:600px){
+  img:not([class*="icon"]):not([class*="logo"]):not([class*="ig"]){max-width:300px;height:auto;margin-left:auto;margin-right:auto}
+}

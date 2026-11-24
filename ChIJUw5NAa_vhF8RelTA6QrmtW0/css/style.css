@@ -51,3 +51,8 @@ footer{background:var(--night);color:#eaefdc;padding:40px 0;font-size:13px}
 footer a{color:#f0d7a8}
 footer ul{padding-left:18px}
 .hp-photo-note{position:fixed;left:0;right:0;bottom:0;z-index:900;background:rgba(46,59,51,.95);color:#fff;font-size:12px;line-height:1.5;text-align:center;padding:8px 12px}
+
+/* hp-mobile-img */
+@media (max-width:600px){
+  img:not([class*="icon"]):not([class*="logo"]):not([class*="ig"]){max-width:300px;height:auto;margin-left:auto;margin-right:auto}
+}

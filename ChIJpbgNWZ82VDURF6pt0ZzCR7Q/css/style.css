@@ -161,3 +161,8 @@ h2{font-size:20px;color:var(--dark);margin-bottom:12px;padding-left:12px;border-
   .mapwrap iframe{height:420px}
   .band img{aspect-ratio:3/2}
 }
+
+/* hp-mobile-img */
+@media (max-width:600px){
+  img:not([class*="icon"]):not([class*="logo"]):not([class*="ig"]){max-width:300px;height:auto;margin-left:auto;margin-right:auto}
+}

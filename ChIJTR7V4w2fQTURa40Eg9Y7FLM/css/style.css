@@ -197,3 +197,8 @@ section{padding:44px 0}
 .flip{transform:scaleY(-1)}
 .house-img img{object-position:32% 50%}
 .hero-logo span+span{color:#E0457F}
+
+/* hp-mobile-img */
+@media (max-width:600px){
+  img:not([class*="icon"]):not([class*="logo"]):not([class*="ig"]){max-width:300px;height:auto;margin-left:auto;margin-right:auto}
+}

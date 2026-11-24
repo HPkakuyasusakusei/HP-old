@@ -189,3 +189,8 @@ section{padding:48px 0}
   .hd-tel{padding:8px 8px;font-size:.8rem}
   .gnav a{font-size:.64rem;padding:11px 0;letter-spacing:-.02em}
 }
+
+/* hp-mobile-img */
+@media (max-width:600px){
+  img:not([class*="icon"]):not([class*="logo"]):not([class*="ig"]){max-width:300px;height:auto;margin-left:auto;margin-right:auto}
+}

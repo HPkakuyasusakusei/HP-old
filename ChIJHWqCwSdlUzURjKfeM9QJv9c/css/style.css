@@ -162,3 +162,8 @@ dd{font-size:17px}
   .callbar{position:fixed;left:0;right:0;bottom:0;z-index:50;display:flex;justify-content:center;align-items:center;gap:12px;background:var(--lime);color:var(--night);text-decoration:none;padding:12px;font-weight:700;border-top:3px solid var(--night)}
   .callbar b{font-size:20px;letter-spacing:.06em}
 }
+
+/* hp-mobile-img */
+@media (max-width:600px){
+  img:not([class*="icon"]):not([class*="logo"]):not([class*="ig"]){max-width:300px;height:auto;margin-left:auto;margin-right:auto}
+}

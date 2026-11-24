@@ -380,3 +380,8 @@ ul { list-style: none; }
   .map-wrap iframe { height: 440px; }
   .site-footer .wrap { grid-template-columns: 1.4fr 1fr; }
 }
+
+/* hp-mobile-img */
+@media (max-width:600px){
+  img:not([class*="icon"]):not([class*="logo"]):not([class*="ig"]){max-width:300px;height:auto;margin-left:auto;margin-right:auto}
+}

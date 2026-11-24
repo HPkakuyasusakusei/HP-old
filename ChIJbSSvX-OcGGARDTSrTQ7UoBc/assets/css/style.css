@@ -928,3 +928,8 @@ body::after {
   .company-table th, .company-table td { padding: 12px; }
   body::before { font-size: 1.8rem; line-height: 1.9; letter-spacing: 0.3rem; }
 }
+
+/* hp-mobile-img */
+@media (max-width:600px){
+  img:not([class*="icon"]):not([class*="logo"]):not([class*="ig"]){max-width:300px;height:auto;margin-left:auto;margin-right:auto}
+}

@@ -167,3 +167,8 @@ h2{font-size:1.6rem}
 .footer-inner{display:flex;justify-content:space-between;gap:32px}
 .site-footer{padding:48px max(32px,calc((100% - 1040px)/2)) 28px}
 }
+
+/* hp-mobile-img */
+@media (max-width:600px){
+  img:not([class*="icon"]):not([class*="logo"]):not([class*="ig"]){max-width:300px;height:auto;margin-left:auto;margin-right:auto}
+}

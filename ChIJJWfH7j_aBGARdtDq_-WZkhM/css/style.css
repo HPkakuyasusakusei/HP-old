@@ -184,3 +184,8 @@ p{margin:0 0 1em}
 .f-name2{font-family:var(--serif);font-size:22px;font-weight:700;margin:0 0 .3em}
 .dark .btn.line{color:var(--wave)}
 
+
+/* hp-mobile-img */
+@media (max-width:600px){
+  img:not([class*="icon"]):not([class*="logo"]):not([class*="ig"]){max-width:300px;height:auto;margin-left:auto;margin-right:auto}
+}

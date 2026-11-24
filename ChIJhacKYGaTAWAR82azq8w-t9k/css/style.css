@@ -137,3 +137,8 @@ main{max-width:1180px;margin:0 auto;padding:0 6vw}
   .credit-list{columns:1}
   .phone-bar{display:block;position:fixed;left:0;right:0;bottom:0;z-index:120;background:var(--lime);color:var(--indigo);text-align:center;font-weight:700;padding:14px 10px;text-decoration:none;letter-spacing:.05em;border-top:2px solid var(--indigo)}
 }
+
+/* hp-mobile-img */
+@media (max-width:600px){
+  img:not([class*="icon"]):not([class*="logo"]):not([class*="ig"]){max-width:300px;height:auto;margin-left:auto;margin-right:auto}
+}

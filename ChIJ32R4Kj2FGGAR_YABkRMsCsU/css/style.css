@@ -175,3 +175,8 @@ body.pg-voice{background:var(--deep)}
   .acc-map iframe{height:560px}
   .acc-info{padding:26px 24px}
 }
+
+/* hp-mobile-img */
+@media (max-width:600px){
+  img:not([class*="icon"]):not([class*="logo"]):not([class*="ig"]){max-width:300px;height:auto;margin-left:auto;margin-right:auto}
+}

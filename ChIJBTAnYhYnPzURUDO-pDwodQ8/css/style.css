@@ -118,3 +118,8 @@ h1,h2,h3{font-family:"Zen Maru Gothic","Noto Sans JP",sans-serif;line-height:1.4
  .tel-bar{display:flex;position:fixed;left:0;right:0;bottom:0;z-index:950;height:52px;align-items:center;justify-content:center;gap:8px;background:var(--jam);color:#fff;text-decoration:none;font-weight:700}
  .site-footer{padding-bottom:130px}
 }
+
+/* hp-mobile-img */
+@media (max-width:600px){
+  img:not([class*="icon"]):not([class*="logo"]):not([class*="ig"]){max-width:300px;height:auto;margin-left:auto;margin-right:auto}
+}

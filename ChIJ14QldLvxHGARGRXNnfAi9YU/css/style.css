@@ -216,3 +216,8 @@ section{padding:56px 0}
   .vcard:nth-child(even){margin-left:96px}
   .vcard:nth-child(odd){margin-right:96px}
 }
+
+/* hp-mobile-img */
+@media (max-width:600px){
+  img:not([class*="icon"]):not([class*="logo"]):not([class*="ig"]){max-width:300px;height:auto;margin-left:auto;margin-right:auto}
+}

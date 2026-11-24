@@ -211,3 +211,8 @@ body{padding-bottom:0;font-size:17px}
 .foot-grid{grid-template-columns:1.2fr 1fr;max-width:1000px;margin:0 auto}
 .site-footer>p,.credits{max-width:1000px;margin-left:auto;margin-right:auto}
 }
+
+/* hp-mobile-img */
+@media (max-width:600px){
+  img:not([class*="icon"]):not([class*="logo"]):not([class*="ig"]){max-width:300px;height:auto;margin-left:auto;margin-right:auto}
+}

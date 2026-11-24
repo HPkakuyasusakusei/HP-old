@@ -316,3 +316,8 @@ ul,ol{margin:0;padding:0;list-style:none}
   .gnav a{font-size:11px}
   .brand{flex-wrap:wrap;gap:2px 8px}
 }
+
+/* hp-mobile-img */
+@media (max-width:600px){
+  img:not([class*="icon"]):not([class*="logo"]):not([class*="ig"]){max-width:300px;height:auto;margin-left:auto;margin-right:auto}
+}

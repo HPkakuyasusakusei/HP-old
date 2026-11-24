@@ -204,3 +204,8 @@ a:focus-visible, button:focus-visible { outline: 3px solid #f2c94c; outline-offs
   .site-footer { padding: 28px 18px 32px; }
   .tel-bar { display: block; position: fixed; left: 0; right: 0; bottom: 0; z-index: 35; background: var(--teal); color: #fff; text-align: center; font-weight: 700; font-size: 17px; padding: 16px 12px; text-decoration: none; }
 }
+
+/* hp-mobile-img */
+@media (max-width:600px){
+  img:not([class*="icon"]):not([class*="logo"]):not([class*="ig"]){max-width:300px;height:auto;margin-left:auto;margin-right:auto}
+}

@@ -399,3 +399,8 @@ ul { padding: 0; list-style: none; }
   .access-photos { grid-template-columns: 1fr 1fr; }
   .access-photos img:first-child { grid-column: 1 / -1; }
 }
+
+/* hp-mobile-img */
+@media (max-width:600px){
+  img:not([class*="icon"]):not([class*="logo"]):not([class*="ig"]){max-width:300px;height:auto;margin-left:auto;margin-right:auto}
+}

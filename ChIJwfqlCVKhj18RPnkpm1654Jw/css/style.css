@@ -213,3 +213,8 @@ main{display:block}
   .fv-text>*:not(.fv-catch){grid-column:1}
   .fv-text .fv-catch{grid-column:2}
 }
+
+/* hp-mobile-img */
+@media (max-width:600px){
+  img:not([class*="icon"]):not([class*="logo"]):not([class*="ig"]){max-width:300px;height:auto;margin-left:auto;margin-right:auto}
+}

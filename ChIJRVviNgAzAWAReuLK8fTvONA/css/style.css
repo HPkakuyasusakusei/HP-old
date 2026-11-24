@@ -176,3 +176,8 @@ aside.note{max-width:640px;transform:rotate(-1deg)}
 @media(prefers-reduced-motion:reduce){
   .snap,.note,.tag-label,.hp-sample-badge,aside.note,.one-photo,.collage .snap{transform:none!important}
 }
+
+/* hp-mobile-img */
+@media (max-width:600px){
+  img:not([class*="icon"]):not([class*="logo"]):not([class*="ig"]){max-width:300px;height:auto;margin-left:auto;margin-right:auto}
+}

@@ -172,3 +172,8 @@ p.small{font-size:13px;line-height:1.7}
   .band-s img{height:220px}
   .deco{width:34%}
 }
+
+/* hp-mobile-img */
+@media (max-width:600px){
+  img:not([class*="icon"]):not([class*="logo"]):not([class*="ig"]){max-width:300px;height:auto;margin-left:auto;margin-right:auto}
+}

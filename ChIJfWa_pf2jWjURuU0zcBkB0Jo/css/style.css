@@ -158,3 +158,8 @@ h2{font-size:24px}
   .btn{flex:1 1 100%}
   .tel-bar{display:flex;position:fixed;left:0;right:0;bottom:0;z-index:50;background:var(--gold);color:var(--plum);text-decoration:none;justify-content:center;align-items:center;gap:10px;padding:14px 10px;font-weight:700;letter-spacing:.08em;border-top:1px solid var(--plum)}
 }
+
+/* hp-mobile-img */
+@media (max-width:600px){
+  img:not([class*="icon"]):not([class*="logo"]):not([class*="ig"]){max-width:300px;height:auto;margin-left:auto;margin-right:auto}
+}

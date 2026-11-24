@@ -182,3 +182,8 @@ footer.site-footer{background:var(--paper2);padding:54px 0 30px;border-top:3px s
   .nav ul{gap:2px 16px}
   .info dl div{grid-template-columns:1fr;gap:2px}
 }
+
+/* hp-mobile-img */
+@media (max-width:600px){
+  img:not([class*="icon"]):not([class*="logo"]):not([class*="ig"]){max-width:300px;height:auto;margin-left:auto;margin-right:auto}
+}

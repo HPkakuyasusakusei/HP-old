@@ -166,3 +166,8 @@ p{margin:0 0 1em}
   .tel-bar{display:flex;align-items:center;justify-content:center;gap:8px;position:fixed;left:0;right:0;bottom:0;z-index:30;height:56px;background:var(--ink);color:var(--pale);text-decoration:none;font-weight:700;font-size:1.05rem;border-top:4px solid var(--coral)}
   .tel-bar svg{width:20px;height:20px}
 }
+
+/* hp-mobile-img */
+@media (max-width:600px){
+  img:not([class*="icon"]):not([class*="logo"]):not([class*="ig"]){max-width:300px;height:auto;margin-left:auto;margin-right:auto}
+}

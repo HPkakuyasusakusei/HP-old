@@ -199,3 +199,8 @@ dl.ledger-dl dt{background:var(--mist);color:var(--ink);font-weight:700;font-siz
   .info-bar{grid-template-columns:1fr}
   .info-bar div{border-right:0;border-bottom:1px solid var(--frost)}
 }
+
+/* hp-mobile-img */
+@media (max-width:600px){
+  img:not([class*="icon"]):not([class*="logo"]):not([class*="ig"]){max-width:300px;height:auto;margin-left:auto;margin-right:auto}
+}

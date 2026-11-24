@@ -254,3 +254,8 @@ section{padding:48px 0}
   .voice-end .voice-photo{grid-column:1 / span 8}
   .voice-end .text{grid-column:1 / -1}
 }
+
+/* hp-mobile-img */
+@media (max-width:600px){
+  img:not([class*="icon"]):not([class*="logo"]):not([class*="ig"]){max-width:300px;height:auto;margin-left:auto;margin-right:auto}
+}
