@@ -1,108 +1,52 @@
-
-:root{--bg:#eff3ee;--ink:#1b2c2b;--deep:#1f4a49;--teal:#3d8782;--mist:#cfe1de;--gold:#cf9b3f;--line:#b9cbc7;--paper:#f9fbf8}
-*{box-sizing:border-box;margin:0;padding:0}
+:root{--bg:#f7f0d8;--ink:#382d25;--acc:#86582f;--grn:#58694d;--soft:#e9dab2;--dk:#2c231a}
+*{box-sizing:border-box}
 html{scroll-behavior:smooth}
-body{background:var(--bg);color:var(--ink);font:400 16px/1.95 "Zen Kaku Gothic New","Hiragino Sans","Yu Gothic",sans-serif;overflow-x:hidden;padding-bottom:56px}
-img{display:block;max-width:100%;height:auto}
-a{color:var(--deep)}
-.top{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:14px 18px 14px 20px;flex-wrap:wrap;max-width:1180px;margin:0 auto}
-.logo{font:italic 500 32px/1 "Cormorant Garamond",serif;color:var(--deep);text-decoration:none;letter-spacing:.04em}
-.top ul{list-style:none;display:flex;flex-wrap:wrap;gap:4px 18px}
-.top nav a{font-size:14px;text-decoration:none;color:var(--ink);padding:4px 0;border-bottom:2px solid transparent}
-.top nav a[aria-current=page],.top nav a:hover{border-bottom-color:var(--gold)}
-.k{font:700 12px/1.6 "Zen Kaku Gothic New",sans-serif;letter-spacing:.22em;color:var(--teal);margin-bottom:6px}
-.center{text-align:center}
-h1,h2{font-family:"Zen Old Mincho",serif;font-weight:700;line-height:1.5;color:var(--deep)}
-h2{font-size:clamp(22px,4.6vw,30px);margin-bottom:12px}
-.in{max-width:1000px;margin:0 auto;padding:0 20px}
-.band{padding:56px 0}
-.band.light{background:var(--paper)}
-.band.assoc{background:var(--deep);color:#e7f1ef}
-.band.assoc h2,.band.assoc .k{color:#f0d79b}
-.band.assoc p{max-width:44em}
-.note{font-size:13px;color:#4c6260;margin-top:10px}
-.pending{display:inline-block;padding:0 12px;border:1px dashed var(--teal);border-radius:99px;color:var(--teal);font-size:14px}
-.breath{display:block;width:100%;height:56px}
-.breath:not(.fill) path{fill:none;stroke:var(--gold);stroke-width:2.2;vector-effect:non-scaling-stroke}
-.breath.fill path{fill:var(--deep)}
-/* hero */
-.hero{position:relative;max-width:1180px;margin:0 auto;padding:10px 20px 0;display:grid;grid-template-columns:auto 1fr;grid-template-areas:"vt disc" "txt txt" "br br";gap:8px 18px;align-items:center}
-.vt{grid-area:vt;writing-mode:vertical-rl;font:italic 500 clamp(88px,26vw,190px)/1 "Cormorant Garamond",serif;color:var(--deep);letter-spacing:.02em;justify-self:start}
-.vt .lat{display:block}
-.heroin{grid-area:txt;max-width:36em}
-.herodisc{grid-area:disc;justify-self:end}
-.hero .breath{grid-area:br;margin-top:18px}
-.lead{margin:6px 0 16px}
-.btns{display:flex;flex-wrap:wrap;gap:10px}
-.btn{display:inline-block;padding:9px 24px;background:var(--deep);color:#fff;text-decoration:none;border-radius:99px;font-weight:700;font-size:14px;border:2px solid var(--deep)}
-.btn.ghost{background:transparent;color:var(--deep)}
-/* circles */
-.cir{margin:0;display:flex;flex-direction:column;align-items:center;gap:6px;width:var(--d)}
-.cir .disc{display:block;width:var(--d);height:var(--d);border-radius:50%;overflow:hidden;box-shadow:0 0 0 6px var(--bg),0 0 0 7px var(--gold)}
-.cir .disc img{width:100%;height:100%;object-fit:cover}
-.cir figcaption,.ph figcaption{font-size:11px;color:#516664;line-height:1.5;text-align:center}
-/* chapters */
-.chaps{max-width:1100px;margin:0 auto;padding:56px 20px 20px}
-.chap{display:grid;grid-template-columns:auto 1fr;grid-template-areas:"mark pics" "text text";gap:14px 18px;align-items:center;padding:34px 0;border-top:1px solid var(--line)}
-.cmark{grid-area:mark;display:flex;gap:8px;align-items:flex-start}
-.cno{font:italic 500 22px/1 "Cormorant Garamond",serif;color:var(--gold)}
-.cv{writing-mode:vertical-rl;font-size:clamp(40px,12vw,84px);line-height:1.1;letter-spacing:.12em;margin:0}
-.ctext{grid-area:text;max-width:34em}
-.cpics{grid-area:pics;display:flex;flex-wrap:wrap;gap:14px;align-items:center;justify-content:center}
-.chap.c3 .cpics{flex-direction:column}
-.chap.c3 .cir.sm{align-self:flex-end}
-.chap.c4{border-bottom:1px solid var(--line)}
-@media(min-width:820px){
- .hero{grid-template-columns:auto 1fr 400px;grid-template-areas:"vt txt disc" "br br br";padding-top:24px;gap:10px 40px}
- .heroin{align-self:center}
- .chap{grid-template-columns:140px 1fr minmax(240px,var(--d));grid-template-areas:"mark text pics";gap:30px;padding:44px 0}
- .chap:nth-of-type(odd){grid-template-columns:minmax(240px,var(--d)) 1fr 140px;grid-template-areas:"pics text mark"}
- .cpics{justify-content:center}
- .chap.c3{padding:64px 0}
-}
-/* page heads */
-.pagehead{padding-top:34px;background:linear-gradient(var(--bg),var(--mist))}
-.pagehead h1{font-size:clamp(28px,6vw,44px);margin-bottom:6px}
-.pagehead .lead{max-width:36em}
-.pagehead .breath{margin-top:10px}
-.two{display:grid;grid-template-columns:1fr;gap:26px;align-items:start}
-@media(min-width:820px){.two{grid-template-columns:1.2fr 1fr}.two.rev{grid-template-columns:1fr 1.1fr}}
-.three{display:grid;grid-template-columns:1fr;gap:16px;margin-top:20px}
-@media(min-width:700px){.three{grid-template-columns:repeat(3,1fr)}}
-.ph{margin:0}
-.ph img{width:100%;height:260px;object-fit:cover;border-radius:120px 120px 14px 14px}
-.ph.tall img{height:min(78vw,440px);border-radius:999px 999px 14px 14px}
-.ph figcaption{margin-top:6px}
-.facts{list-style:none}
-.facts li{padding:8px 0 8px 22px;border-bottom:1px solid var(--line);position:relative}
-.facts li::before{content:"";position:absolute;left:2px;top:17px;width:9px;height:9px;border-radius:50%;border:2px solid var(--gold)}
-.imagine{background:var(--paper);border-left:4px solid var(--gold);padding:10px 14px;font-size:14px;margin-bottom:20px}
-.tt{width:100%;border-collapse:collapse;margin:8px 0}
-.tt th,.tt td{padding:10px 8px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top}
-.tt th{width:7em;font-weight:700;color:var(--deep);white-space:nowrap}
-.map iframe{width:100%;height:340px;border:0;border-radius:14px;margin-top:24px;background:var(--mist)}
-.vlist{display:grid;gap:18px}
-.vcard{background:var(--paper);border:1px solid var(--line);border-radius:60px 60px 16px 16px;padding:26px 22px 18px;margin:0}
-.vcard:nth-child(2){margin-left:min(8vw,50px)}
-.voice-sample-tag{display:inline-block;background:var(--gold);color:#2b1f06;font-size:11px;font-weight:700;padding:1px 10px;border-radius:99px;margin-bottom:8px;letter-spacing:.08em}
-.vcard blockquote{font-family:"Zen Old Mincho",serif;font-size:16px}
-.vcard figcaption{font-size:12px;color:#4c6260;margin-top:8px}
-/* footer */
-.foot{margin-top:40px}
-.foot .breath{height:48px}
-.footin{background:var(--deep);color:#dbe9e6;padding:10px 20px 70px}
-.footin>*{max-width:1000px;margin-left:auto;margin-right:auto}
-.footin a{color:#f0d79b}
-.fn{font:italic 500 34px/1.2 "Cormorant Garamond",serif;margin-bottom:6px}
-.credits{margin-top:22px;font-size:12px;line-height:1.7;color:#b9cfca}
-.credits ul{margin:8px 0 8px 1.2em}
-.credits li{margin-bottom:3px;word-break:break-word}
-.design{margin-top:18px;font-size:12px;color:#b9cfca}
-.hp-photo-note{position:fixed;left:0;right:0;bottom:0;background:rgba(27,44,43,.94);color:#fff;font-size:12px;line-height:1.5;padding:8px 14px;text-align:center;z-index:900}
-@media(prefers-reduced-motion:no-preference){.cir .disc{animation:inhale 7s ease-in-out infinite}.chap.c3 .cir.big .disc{animation-duration:9s}}
-@keyframes inhale{0%,100%{transform:scale(1)}50%{transform:scale(1.035)}}
-
-/* hp-mobile-img */
-@media (max-width:600px){
-  img:not([class*="icon"]):not([class*="logo"]):not([class*="ig"]){max-width:300px;height:auto;margin-left:auto;margin-right:auto}
-}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 16px/1.95 "Zen Kaku Gothic New",sans-serif;padding-bottom:48px}
+img{max-width:100%;display:block}
+a{color:var(--acc)}
+h1,h2,h3{font-family:"Zen Old Mincho",serif;font-weight:700;line-height:1.5;margin:0}
+.top{position:fixed;top:0;left:0;right:0;z-index:800;display:flex;justify-content:space-between;align-items:center;padding:10px 20px;background:rgba(44,35,26,.86);color:#fff}
+.top .logo{font:500 22px "Cormorant Garamond",serif;color:#fff;text-decoration:none;letter-spacing:.12em}
+.top ul{list-style:none;margin:0;padding:0;display:flex;gap:16px;font-size:13px}
+.top ul a{color:#fff;text-decoration:none}
+.hero{position:relative;min-height:100vh;display:flex;align-items:flex-end;color:#fff;background:var(--dk) url(../images/wheatsky.jpg) center/cover}
+.hero::before{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(44,35,26,.25),rgba(44,35,26,.8))}
+.hero .in{position:relative;padding:120px 24px 72px;max-width:880px;margin:0 auto;width:100%}
+.hero .k{font-size:13px;letter-spacing:.2em;margin:0 0 8px}
+.hero h1{font-size:clamp(56px,14vw,120px);font-family:"Cormorant Garamond",serif;font-weight:500;letter-spacing:.08em}
+.hero .lead{font:700 clamp(18px,3.6vw,26px)/1.8 "Zen Old Mincho",serif;margin:12px 0 0}
+.sec{padding:84px 22px}
+.sec .in{max-width:900px;margin:0 auto}
+.sec.alt{background:var(--soft)}
+.sec.dark{background:var(--dk);color:#fff}
+.sec.dark a{color:#e3c08a}
+.sec h2{font-size:clamp(24px,5vw,34px);margin-bottom:22px;padding-left:16px;border-left:4px solid var(--acc)}
+.eyebrow{font:italic 500 16px "Cormorant Garamond",serif;color:var(--grn);margin:0 0 6px;letter-spacing:.1em}
+.dark .eyebrow{color:#cdd8b6}
+.duo{display:grid;gap:22px;grid-template-columns:1fr 1fr;margin-top:26px}
+.duo img,.trio img{width:100%;height:240px;object-fit:cover;border-radius:3px}
+.trio{display:grid;gap:14px;grid-template-columns:repeat(3,1fr);margin-top:26px}
+.trio img{height:180px}
+figure{margin:0}
+.cap{font-size:12px;opacity:.75;margin-top:4px;line-height:1.5}
+.cards{display:grid;gap:16px;grid-template-columns:repeat(3,1fr);margin-top:26px}
+.card{background:var(--bg);border-radius:4px;overflow:hidden}
+.card img{height:170px;width:100%;object-fit:cover}
+.card div{padding:14px 16px}
+.card h3{font-size:18px}
+.card p{margin:6px 0 0;font-size:14px;line-height:1.8}
+.pending{display:inline-block;background:var(--ink);color:#fff;font-size:12px;padding:0 10px;border-radius:2px}
+.voices{display:grid;gap:16px;margin-top:20px}
+.voice{background:var(--soft);padding:20px 22px;border-radius:4px}
+.tag{display:inline-block;background:var(--grn);color:#fff;font-size:12px;padding:0 10px;border-radius:2px;margin-bottom:6px}
+table{border-collapse:collapse;width:100%}
+th,td{text-align:left;padding:10px 8px;border-bottom:1px solid #725f4b;vertical-align:top}
+th{width:7em;font-weight:700}
+iframe{width:100%;height:320px;border:0;margin-top:24px;border-radius:3px}
+.btn{display:inline-block;background:var(--acc);color:#fff;padding:8px 24px;border-radius:30px;text-decoration:none;margin-top:12px}
+.credits{font-size:12px;line-height:1.7}
+.credits ul{padding-left:1.2em}
+.foot{background:#1b1510;color:#fff;text-align:center;padding:36px 20px;font-size:13px}
+.foot a{color:#e3c08a}
+.hp-photo-note{position:fixed;left:0;right:0;bottom:0;background:rgba(27,21,16,.94);color:#fff;font-size:12px;line-height:1.5;padding:8px 14px;text-align:center;z-index:900;margin:0}
+@media(max-width:720px){.duo,.cards,.trio{grid-template-columns:1fr}.trio img{height:200px}.top ul{gap:9px;font-size:11px}.top .logo{font-size:18px}.sec{padding:64px 18px}}
